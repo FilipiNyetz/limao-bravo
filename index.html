@@ -1,770 +1,2717 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Limãozinho Bravo | Mudas para Cerca Viva com Qualidade e Suporte Real</title>
-<meta name="description" content="Compre mudas de Limãozinho Bravo para formar cercas vivas densas e duráveis. Pedido mínimo 100 unidades. Suporte técnico real. Entregamos para todo o Brasil.">
-<meta property="og:title" content="Limãozinho Bravo — A Muda Certa para sua Cerca Viva">
-<meta property="og:description" content="A planta ideal para cercas vivas: robusta, densa e de rápido crescimento. Fotos reais, suporte técnico em vídeo e entrega nacional. Fale no WhatsApp.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{
---verde-escuro:#1A6B00;
---verde-limao:#8BC34A;
---amarelo:#F9C400;
---azul-jeans:#1565C0;
---marrom-terra:#6D4C41;
---branco:#FFFFFF;
---preto-suave:#1A1A1A;
---cinza-claro:#F5F5F5;
---whatsapp:#25D366;
---sombra-verde:0 8px 32px rgba(26,107,0,0.25);
-}
-html{scroll-behavior:smooth;}
-body{font-family:'Montserrat',sans-serif;color:var(--preto-suave);line-height:1.6;overflow-x:hidden;}
-h1,h2,h3,.bebas{font-family:'Bebas Neue',cursive;}
-img{max-width:100%;display:block;}
-a{text-decoration:none;color:inherit;}
-.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limãozinho Bravo | Mudas para Cerca Viva com Qualidade e Suporte Real</title>
+  <meta name="description"
+    content="Compre mudas de Limãozinho Bravo para formar cercas vivas densas e duráveis. Pedido mínimo 100 unidades. Suporte técnico real. Entregamos para todo o Brasil.">
+  <meta property="og:title" content="Limãozinho Bravo — A Muda Certa para sua Cerca Viva">
+  <meta property="og:description"
+    content="A planta ideal para cercas vivas: robusta, densa e de rápido crescimento. Fotos reais, suporte técnico em vídeo e entrega nacional. Fale no WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* Leaf pattern SVG background */
-.leaf-bg{position:relative;}
-.leaf-bg::before{content:'';position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3Cpath d='M60 50 C50 30 30 25 15 35 C30 40 50 45 60 50Z' fill='%23fff'/%3E%3C/svg%3E");pointer-events:none;z-index:0;}
-.leaf-bg>*{position:relative;z-index:1;}
+    :root {
+      --verde-escuro: #1A6B00;
+      --verde-limao: #8BC34A;
+      --amarelo: #F9C400;
+      --azul-jeans: #1565C0;
+      --marrom-terra: #6D4C41;
+      --branco: #FFFFFF;
+      --preto-suave: #1A1A1A;
+      --cinza-claro: #F5F5F5;
+      --whatsapp: #25D366;
+      --sombra-verde: 0 8px 32px rgba(26, 107, 0, 0.25);
+    }
 
-/* ==================== NAVBAR ==================== */
-.navbar{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:16px 0;transition:all .35s;}
-.navbar.scrolled{background:rgba(26,107,0,.95);backdrop-filter:blur(10px);padding:10px 0;box-shadow:0 2px 20px rgba(0,0,0,.2);}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;}
-.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Bebas Neue',cursive;font-size:26px;color:var(--branco);letter-spacing:1px;}
-.nav-logo img{height:44px;width:auto;border-radius:4px;transition:transform .3s;}
-.nav-logo:hover img{transform:rotate(-5deg) scale(1.1);}
-.nav-links{display:flex;gap:28px;align-items:center;}
-.nav-links a{color:var(--branco);font-size:14px;font-weight:500;letter-spacing:.5px;transition:color .2s;position:relative;}
-.nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--amarelo);transition:width .3s;}
-.nav-links a:not(.nav-cta):hover::after{width:100%;}
-.nav-links a:hover{color:var(--amarelo);}
-.nav-cta{background:var(--amarelo);color:var(--preto-suave);padding:10px 22px;border-radius:6px;font-weight:700;font-size:14px;transition:all .2s;border:none;cursor:pointer;}
-.nav-cta:hover{filter:brightness(.9);transform:translateY(-2px);}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001;background:none;border:none;padding:8px;}
-.hamburger span{display:block;width:26px;height:3px;background:var(--branco);border-radius:2px;transition:all .3s;}
-.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,6px);}
-.hamburger.active span:nth-child(2){opacity:0;}
-.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-6px);}
-.mobile-menu{position:fixed;top:0;right:-100%;width:280px;height:100vh;background:var(--verde-escuro);display:flex;flex-direction:column;padding:80px 32px 32px;gap:24px;transition:right .35s;z-index:999;box-shadow:-4px 0 30px rgba(0,0,0,.3);}
-.mobile-menu.open{right:0;}
-.mobile-menu a{color:var(--branco);font-size:18px;font-weight:500;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);}
-.mobile-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:998;display:none;}
-.mobile-overlay.show{display:block;}
+    html {
+      scroll-behavior: smooth;
+    }
 
-/* ==================== HERO ==================== */
-.hero{min-height:100vh;background:var(--verde-escuro);display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3Cpath d='M60 50 C50 30 30 25 15 35 C30 40 50 45 60 50Z' fill='%23fff'/%3E%3C/svg%3E");pointer-events:none;}
-.hero>*{position:relative;z-index:1;}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
-.hero-badge{display:inline-block;background:rgba(255,255,255,.12);color:var(--amarelo);padding:8px 20px;border-radius:30px;font-size:13px;font-weight:700;letter-spacing:1.5px;margin-bottom:20px;border:1px solid rgba(249,196,0,.3);}
-.hero h1{font-size:72px;color:var(--branco);line-height:1.05;letter-spacing:2px;margin-bottom:20px;}
-.hero-sub{font-size:20px;color:rgba(255,255,255,.8);font-weight:500;line-height:1.6;margin-bottom:36px;}
-.hero-cta{display:inline-block;background:var(--amarelo);color:var(--preto-suave);padding:20px 48px;font-size:18px;font-weight:700;border-radius:8px;border:none;cursor:pointer;transition:all .25s;animation:pulse-cta 2s infinite;}
-.hero-cta:hover{filter:brightness(.9);transform:translateY(-4px);box-shadow:0 8px 30px rgba(249,196,0,.4);}
-@keyframes pulse-cta{0%,100%{transform:scale(1);}50%{transform:scale(1.04);}}
-.hero-secondary{display:block;margin-top:18px;color:var(--branco);font-size:15px;text-decoration:underline;text-underline-offset:4px;opacity:.8;transition:opacity .2s;}
-.hero-secondary:hover{opacity:1;}
-.hero-visual{display:flex;align-items:center;justify-content:center;}
-.hero-mascote{max-width:420px;width:100%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.4));animation:float 3s ease-in-out infinite;}
-@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-16px);}}
-.scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:var(--branco);font-size:28px;animation:bounce-scroll 2s infinite;opacity:.7;}
-@keyframes bounce-scroll{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(12px);}}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--preto-suave);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-/* Animation classes */
-.anim-hidden{opacity:0;transform:translateY(40px);transition:all .6s cubic-bezier(.22,1,.36,1);}
-.anim-visible{opacity:1;transform:translateY(0);}
-.anim-left{opacity:0;transform:translateX(-40px);transition:all .6s cubic-bezier(.22,1,.36,1);}
-.anim-left.anim-visible{opacity:1;transform:translateX(0);}
-.anim-right{opacity:0;transform:translateX(40px);transition:all .6s cubic-bezier(.22,1,.36,1);}
-.anim-right.anim-visible{opacity:1;transform:translateX(0);}
-.anim-scale{opacity:0;transform:scale(.85);transition:all .6s cubic-bezier(.22,1,.36,1);}
-.anim-scale.anim-visible{opacity:1;transform:scale(1);}
-.anim-rotate{opacity:0;transform:rotate(-8deg) scale(.9);transition:all .7s cubic-bezier(.22,1,.36,1);}
-.anim-rotate.anim-visible{opacity:1;transform:rotate(0) scale(1);}
-.hero-title-clip{clip-path:inset(0 100% 0 0);animation:clip-reveal .6s .2s forwards;}
-@keyframes clip-reveal{to{clip-path:inset(0 0 0 0);}}
+    h1,
+    h2,
+    h3,
+    .bebas {
+      font-family: 'Bebas Neue', cursive;
+    }
 
-/* Parallax-like slow scroll elements */
-.parallax-leaf{position:absolute;opacity:.06;pointer-events:none;z-index:0;transition:transform .1s linear;}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-/* ==================== PRODUCT GALLERY ==================== */
-.product-gallery{padding:80px 0;background:var(--branco);overflow:hidden;}
-.gallery-title-wrap{text-align:center;margin-bottom:48px;}
-.gallery-scroll{display:flex;gap:24px;overflow-x:auto;padding:0 24px 24px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
-.gallery-scroll::-webkit-scrollbar{display:none;}
-.gallery-item{min-width:320px;max-width:400px;flex-shrink:0;scroll-snap-align:center;border-radius:16px;overflow:hidden;box-shadow:var(--sombra-verde);transition:transform .4s,box-shadow .4s;position:relative;}
-.gallery-item:hover{transform:scale(1.03);box-shadow:0 16px 48px rgba(26,107,0,.3);}
-.gallery-item img{width:100%;height:320px;object-fit:cover;transition:transform .5s;}
-.gallery-item:hover img{transform:scale(1.08);}
-.gallery-item .gallery-badge{position:absolute;bottom:16px;left:16px;background:var(--amarelo);color:var(--preto-suave);padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-/* ==================== TRUST BAR ==================== */
-.trust-bar{background:var(--amarelo);padding:16px 0;overflow:hidden;}
-.trust-items{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;font-weight:700;font-size:14px;color:var(--preto-suave);letter-spacing:.5px;}
-.trust-items span{white-space:nowrap;}
-.trust-sep{color:rgba(26,26,26,.3);}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-/* ==================== ABOUT ==================== */
-.about{padding:100px 0;background:var(--branco);}
-.section-tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:2px;color:var(--verde-escuro);margin-bottom:12px;text-transform:uppercase;}
-.section-title{font-family:'Bebas Neue',cursive;font-size:48px;color:var(--verde-escuro);line-height:1.1;margin-bottom:28px;letter-spacing:1px;}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-.about-text p{font-size:17px;color:#444;margin-bottom:20px;line-height:1.8;}
-.about-icons{display:flex;gap:40px;margin-top:32px;}
-.about-icon-item{text-align:center;flex:1;}
-.about-icon-item .icon{font-size:32px;margin-bottom:8px;}
-.about-icon-item h4{font-size:14px;font-weight:700;color:var(--verde-escuro);margin-bottom:4px;}
-.about-icon-item p{font-size:13px;color:#666;}
-.about-visual{display:flex;flex-direction:column;gap:24px;}
-.about-quote{background:var(--verde-escuro);border:2px solid var(--amarelo);border-radius:12px;padding:40px;color:var(--branco);font-size:18px;font-style:italic;line-height:1.7;}
-.about-quote cite{display:block;margin-top:16px;font-style:normal;font-weight:700;color:var(--amarelo);font-size:14px;letter-spacing:1px;}
-.about-mascote-img{max-width:280px;margin:0 auto;filter:drop-shadow(0 12px 24px rgba(0,0,0,.2));animation:float 4s ease-in-out infinite;animation-delay:.5s;}
+    .leaf-bg {
+      position: relative;
+    }
 
-/* ==================== BENEFITS ==================== */
-.benefits{padding:100px 0;background:var(--cinza-claro);}
-.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;}
-.benefit-card{background:var(--branco);border-left:4px solid var(--amarelo);padding:32px 28px;border-radius:8px;box-shadow:0 4px 20px rgba(26,107,0,.12);transition:all .3s;}
-.benefit-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(26,107,0,.2);}
-.benefit-icon{width:48px;height:48px;background:var(--verde-escuro);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;transition:transform .3s;}
-.benefit-card:hover .benefit-icon{transform:rotate(15deg) scale(1.15);}
-.benefit-card h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:var(--verde-escuro);margin-bottom:10px;letter-spacing:.5px;}
-.benefit-card p{font-size:14px;color:#555;line-height:1.7;}
+    .leaf-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3Cpath d='M60 50 C50 30 30 25 15 35 C30 40 50 45 60 50Z' fill='%23fff'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
 
-/* ==================== STATS ==================== */
-.stats{padding:80px 0;background:var(--verde-escuro);position:relative;}
-.stats::before{content:'';position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3C/svg%3E");pointer-events:none;}
-.stats>*{position:relative;z-index:1;}
-.stats-title{text-align:center;font-family:'Bebas Neue',cursive;font-size:40px;color:var(--branco);margin-bottom:48px;letter-spacing:2px;}
-.stats-grid{display:flex;justify-content:center;gap:0;}
-.stat-item{text-align:center;padding:0 48px;border-right:1px solid rgba(255,255,255,.2);}
-.stat-item:last-child{border-right:none;}
-.stat-number{font-family:'Bebas Neue',cursive;font-size:72px;color:var(--amarelo);line-height:1;}
-.stat-label{font-size:13px;font-weight:700;color:var(--branco);letter-spacing:2px;text-transform:uppercase;margin-top:8px;}
-.stat-desc{font-size:14px;color:rgba(255,255,255,.7);margin-top:8px;font-weight:400;}
+    .leaf-bg>* {
+      position: relative;
+      z-index: 1;
+    }
 
-/* ==================== STEPS ==================== */
-.steps{padding:100px 0;background:var(--branco);}
-.steps-timeline{display:flex;justify-content:space-between;align-items:flex-start;margin-top:60px;position:relative;}
-.steps-line{position:absolute;top:36px;left:10%;right:10%;height:4px;background:#e0e0e0;border-radius:2px;}
-.steps-line-fill{height:100%;background:var(--verde-escuro);width:0%;border-radius:2px;transition:width 1.2s ease;}
-.step-item{text-align:center;flex:1;position:relative;z-index:2;}
-.step-icon{width:72px;height:72px;border-radius:50%;background:var(--branco);border:4px solid var(--verde-escuro);display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 20px;position:relative;z-index:2;box-shadow:0 4px 16px rgba(26,107,0,.15);transition:all .4s;}
-.step-item:hover .step-icon{background:var(--verde-escuro);transform:scale(1.1);box-shadow:0 8px 24px rgba(26,107,0,.3);}
-.step-num{font-family:'Bebas Neue',cursive;font-size:14px;color:var(--amarelo);letter-spacing:2px;margin-bottom:8px;}
-.step-title{font-weight:700;font-size:15px;color:var(--verde-escuro);margin-bottom:8px;}
-.step-desc{font-size:13px;color:#666;line-height:1.6;max-width:200px;margin:0 auto;}
-.steps-cta{text-align:center;margin-top:56px;}
-.btn-yellow{display:inline-block;background:var(--amarelo);color:var(--preto-suave);padding:18px 48px;font-size:17px;font-weight:700;border-radius:8px;border:none;cursor:pointer;transition:all .25s;}
-.btn-yellow:hover{filter:brightness(.9);transform:translateY(-3px);box-shadow:0 8px 24px rgba(249,196,0,.35);}
+    /* NAVBAR */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: all .35s;
+    }
 
-/* ==================== TESTIMONIALS ==================== */
-.testimonials{padding:100px 0;background:var(--cinza-claro);}
-.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;}
-.testimonial-card{background:var(--branco);padding:36px 28px 28px;border-radius:8px;border-bottom:3px solid var(--verde-escuro);position:relative;box-shadow:0 4px 16px rgba(0,0,0,.06);transition:all .4s;}
-.testimonial-card:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 16px 40px rgba(0,0,0,.12);}
-.testimonial-card::before{content:'\201C';font-family:'Bebas Neue',cursive;font-size:80px;color:var(--amarelo);opacity:.2;position:absolute;top:8px;left:20px;line-height:1;}
-.testimonial-stars{color:var(--amarelo);font-size:16px;margin-bottom:16px;letter-spacing:2px;}
-.testimonial-card blockquote{font-size:15px;color:#444;line-height:1.7;font-style:italic;margin-bottom:20px;}
-.testimonial-card cite{font-style:normal;font-weight:700;color:var(--verde-escuro);font-size:14px;display:block;}
-.testimonial-card cite span{font-weight:400;color:#888;font-size:13px;}
-.testimonials-footer{text-align:center;margin-top:48px;}
-.testimonials-footer p{color:#666;font-size:15px;font-weight:500;margin-bottom:20px;}
-.btn-outline{display:inline-block;border:2px solid var(--verde-escuro);color:var(--verde-escuro);padding:14px 36px;font-weight:700;font-size:15px;border-radius:8px;transition:all .25s;background:transparent;cursor:pointer;}
-.btn-outline:hover{background:var(--verde-escuro);color:var(--branco);}
+    .navbar.scrolled {
+      background: rgba(26, 107, 0, .95);
+      backdrop-filter: blur(10px);
+      padding: 10px 0;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+    }
 
-/* ==================== YOUTUBE ==================== */
-.youtube{padding:100px 0;background:var(--verde-escuro);position:relative;}
-.youtube::before{content:'';position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3C/svg%3E");pointer-events:none;}
-.youtube>*{position:relative;z-index:1;}
-.youtube .section-tag{color:var(--amarelo);}
-.youtube .section-title{color:var(--branco);}
-.youtube-desc{color:rgba(255,255,255,.8);font-size:17px;line-height:1.7;margin-bottom:40px;max-width:500px;}
-.youtube-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-.video-cards{display:flex;flex-direction:column;gap:24px;}
-.video-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;overflow:hidden;transition:all .3s;}
-.video-card:hover{background:rgba(255,255,255,.18);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.3);}
-.video-embed{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px 12px 0 0;}
-.video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
-.video-card-info{padding:20px;}
-.video-card-info h4{color:var(--branco);font-size:15px;font-weight:700;margin-bottom:8px;}
-.video-card-info span{color:var(--amarelo);font-size:14px;font-weight:700;}
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-/* ==================== FAQ ==================== */
-.faq{padding:100px 0;background:var(--cinza-claro);}
-.accordion{max-width:800px;margin:48px auto 0;}
-.accordion-item{background:var(--branco);margin-bottom:12px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:box-shadow .3s;}
-.accordion-item:hover{box-shadow:0 4px 16px rgba(26,107,0,.12);}
-.accordion-header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;cursor:pointer;font-weight:700;font-size:16px;color:var(--verde-escuro);transition:background .2s;border:none;background:transparent;width:100%;text-align:left;font-family:'Montserrat',sans-serif;}
-.accordion-header:hover{background:rgba(26,107,0,.04);}
-.accordion-icon{font-size:24px;color:var(--amarelo);font-weight:700;transition:transform .35s;flex-shrink:0;}
-.accordion-item.active .accordion-icon{transform:rotate(45deg);}
-.accordion-body{max-height:0;overflow:hidden;transition:max-height .35s ease;background:#F9F9F9;}
-.accordion-body-inner{padding:0 28px 24px;font-size:15px;color:#555;line-height:1.8;}
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 26px;
+      color: var(--branco);
+      letter-spacing: 1px;
+    }
 
-/* ==================== CTA FINAL ==================== */
-.cta-final{padding:100px 0;background:linear-gradient(135deg,#1A6B00,#2E7D32);text-align:center;position:relative;overflow:hidden;}
-.cta-final .emoji-big{font-size:56px;margin-bottom:24px;display:block;}
-.cta-final h2{font-family:'Bebas Neue',cursive;font-size:64px;color:var(--branco);line-height:1.1;margin-bottom:20px;letter-spacing:2px;}
-.cta-final p{color:rgba(255,255,255,.85);font-size:20px;font-weight:500;max-width:600px;margin:0 auto 40px;line-height:1.6;}
-.cta-final .cta-logo{max-width:160px;margin:0 auto 32px;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 8px 24px rgba(0,0,0,.3));}
-.cta-mega-btn{display:inline-block;background:var(--amarelo);color:var(--preto-suave);padding:22px 64px;font-size:20px;font-weight:700;border-radius:8px;border:none;cursor:pointer;transition:all .25s;animation:pulse-cta 2s infinite;min-width:480px;}
-.cta-mega-btn:hover{filter:brightness(.9);transform:translateY(-4px) scale(1.02);box-shadow:0 12px 40px rgba(249,196,0,.45);}
-.cta-below{margin-top:20px;color:rgba(255,255,255,.6);font-size:14px;}
-.trust-seals{display:flex;justify-content:center;gap:24px;margin-top:32px;flex-wrap:wrap;}
-.trust-seal{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:10px 20px;border-radius:24px;color:var(--branco);font-size:13px;font-weight:600;transition:all .3s;}
-.trust-seal:hover{background:rgba(255,255,255,.25);transform:translateY(-2px);}
+    .nav-logo img {
+      height: 44px;
+      width: auto;
+      border-radius: 4px;
+      transition: transform .3s;
+    }
 
-/* ==================== FOOTER ==================== */
-.footer{background:var(--preto-suave);padding:64px 0 0;color:rgba(255,255,255,.7);}
-.footer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1);}
-.footer h3{font-family:'Bebas Neue',cursive;color:var(--branco);font-size:22px;letter-spacing:1px;margin-bottom:20px;}
-.footer-brand p{font-size:14px;margin-bottom:20px;}
-.footer-brand .footer-logo{height:60px;width:auto;margin-bottom:16px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.3));}
-.footer-socials{display:flex;gap:16px;}
-.footer-socials a{width:40px;height:40px;border:1px solid rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .2s;color:var(--branco);}
-.footer-socials a:hover{border-color:var(--amarelo);color:var(--amarelo);transform:translateY(-3px);}
-.footer-socials a svg{width:18px;height:18px;fill:currentColor;}
-.footer-nav a{display:block;font-size:14px;padding:6px 0;transition:color .2s,padding-left .2s;}
-.footer-nav a:hover{color:var(--amarelo);padding-left:8px;}
-.footer-contact p{font-size:14px;margin-bottom:12px;}
-.footer-contact .btn-yellow{padding:12px 28px;font-size:14px;}
-.footer-bottom{text-align:center;padding:24px 0;font-size:13px;color:rgba(255,255,255,.4);}
+    .nav-logo:hover img {
+      transform: rotate(-5deg) scale(1.1);
+    }
 
-/* ==================== WHATSAPP FLOAT ==================== */
-.whatsapp-float{position:fixed;bottom:28px;right:28px;z-index:9999;width:64px;height:64px;background:var(--whatsapp);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 20px rgba(37,211,102,.5);transition:transform .2s;}
-.whatsapp-float:hover{transform:scale(1.1);}
-.whatsapp-float::before{content:'';position:absolute;inset:-8px;border-radius:50%;border:2px solid var(--whatsapp);animation:ripple 2s ease-out infinite;pointer-events:none;}
-@keyframes ripple{0%{inset:-8px;opacity:1;}100%{inset:-28px;opacity:0;}}
-.whatsapp-float svg{width:32px;height:32px;fill:var(--branco);}
-.whatsapp-tooltip{position:absolute;right:76px;top:50%;transform:translateY(-50%);background:var(--verde-escuro);color:var(--branco);padding:8px 16px;border-radius:6px;font-size:13px;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;}
-.whatsapp-float:hover .whatsapp-tooltip{opacity:1;}
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
 
-/* ==================== MOBILE CTA FIXED ==================== */
-.mobile-cta-bar{display:none;position:fixed;bottom:0;left:0;width:100%;z-index:997;padding:12px 16px;background:var(--verde-escuro);border-top:2px solid var(--amarelo);}
-.mobile-cta-bar a{display:block;background:var(--amarelo);color:var(--preto-suave);text-align:center;padding:16px;font-weight:700;font-size:16px;border-radius:8px;}
+    .nav-links a {
+      color: var(--branco);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: .5px;
+      transition: color .2s;
+      position: relative;
+    }
 
-/* ==================== RESPONSIVE ==================== */
-@media(max-width:1024px){
-.hero h1{font-size:56px;}
-.hero-grid{grid-template-columns:1fr;text-align:center;}
-.hero-visual{order:-1;margin-bottom:20px;}
-.hero-mascote{max-width:280px;}
-.benefits-grid{grid-template-columns:repeat(2,1fr);}
-.testimonials-grid{grid-template-columns:repeat(2,1fr);}
-.stats-grid{flex-wrap:wrap;gap:32px;}
-.stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.2);padding:24px 0;width:45%;}
-.stat-item:last-child{border-bottom:none;}
-.cta-mega-btn{min-width:auto;width:100%;max-width:480px;}
-.gallery-item{min-width:260px;}
-}
-@media(max-width:768px){
-.nav-links{display:none;}
-.hamburger{display:flex;}
-.hero h1{font-size:44px;}
-.hero-sub{font-size:17px;}
-.hero-cta{padding:16px 32px;font-size:16px;width:100%;}
-.section-title{font-size:36px;}
-.about-grid{grid-template-columns:1fr;}
-.about-icons{flex-direction:column;gap:24px;}
-.benefits-grid{grid-template-columns:1fr;}
-.stats-grid{flex-direction:column;align-items:center;}
-.stat-item{width:100%;padding:20px 0;border-right:none;border-bottom:1px solid rgba(255,255,255,.15);}
-.stat-number{font-size:56px;}
-.steps-timeline{flex-direction:column;gap:40px;}
-.steps-line{display:none;}
-.testimonials-grid{grid-template-columns:1fr;}
-.youtube-grid{grid-template-columns:1fr;}
-.cta-final h2{font-size:40px;}
-.cta-mega-btn{width:100%;min-width:auto;padding:20px 24px;font-size:17px;}
-.footer-grid{grid-template-columns:1fr;}
-.mobile-cta-bar{display:block;}
-.whatsapp-float{bottom:88px;}
-.trust-items{animation:marquee 20s linear infinite;flex-wrap:nowrap;justify-content:flex-start;width:max-content;}
-@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
-.gallery-item{min-width:260px;max-width:300px;}
-.gallery-item img{height:240px;}
-}
-@media(max-width:480px){
-.hero h1{font-size:36px;}
-.section-title{font-size:30px;}
-.stats-title{font-size:30px;}
-}
+    .nav-links a:not(.nav-cta)::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--amarelo);
+      transition: width .3s;
+    }
 
-/* Focus outline */
-*:focus-visible{outline:2px solid var(--amarelo);outline-offset:2px;}
+    .nav-links a:not(.nav-cta):hover::after {
+      width: 100%;
+    }
 
-/* Shimmer effect for images */
-@keyframes shimmer{0%{background-position:-200% 0;}100%{background-position:200% 0;}}
-.img-shimmer{position:relative;overflow:hidden;}
-.img-shimmer::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);background-size:200% 100%;animation:shimmer 3s ease-in-out infinite;pointer-events:none;}
+    .nav-links a:hover {
+      color: var(--amarelo);
+    }
 
-/* Glow pulse for important elements */
-@keyframes glow-pulse{0%,100%{box-shadow:0 0 20px rgba(249,196,0,.2);}50%{box-shadow:0 0 40px rgba(249,196,0,.5);}}
-.glow{animation:glow-pulse 2.5s ease-in-out infinite;}
+    .nav-cta {
+      background: var(--amarelo);
+      color: var(--preto-suave);
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all .2s;
+      border: none;
+      cursor: pointer;
+    }
 
-/* Typewriter for stats section title */
-@keyframes typing{from{width:0;}to{width:100%;}}
-</style>
+    .nav-cta:hover {
+      filter: brightness(.9);
+      transform: translateY(-2px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      z-index: 1001;
+      background: none;
+      border: none;
+      padding: 8px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 26px;
+      height: 3px;
+      background: var(--branco);
+      border-radius: 2px;
+      transition: all .3s;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 280px;
+      height: 100vh;
+      background: var(--verde-escuro);
+      display: flex;
+      flex-direction: column;
+      padding: 80px 32px 32px;
+      gap: 24px;
+      transition: right .35s;
+      z-index: 999;
+      box-shadow: -4px 0 30px rgba(0, 0, 0, .3);
+    }
+
+    .mobile-menu.open {
+      right: 0;
+    }
+
+    .mobile-menu a {
+      color: var(--branco);
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .5);
+      z-index: 998;
+      display: none;
+    }
+
+    .mobile-overlay.show {
+      display: block;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: var(--verde-escuro);
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .08;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3Cpath d='M60 50 C50 30 30 25 15 35 C30 40 50 45 60 50Z' fill='%23fff'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-logo-wrap {
+      margin-bottom: 28px;
+    }
+
+    .hero-logo-img {
+      width: 220px;
+      height: auto;
+      filter: drop-shadow(0 8px 32px rgba(249, 196, 0, .35));
+      animation: logo-glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes logo-glow {
+      0% {
+        filter: drop-shadow(0 8px 24px rgba(249, 196, 0, .2));
+      }
+
+      100% {
+        filter: drop-shadow(0 8px 48px rgba(249, 196, 0, .55));
+      }
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, .12);
+      color: var(--amarelo);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(249, 196, 0, .3);
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      color: var(--branco);
+      line-height: 1.05;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero-sub {
+      font-size: 20px;
+      color: rgba(255, 255, 255, .8);
+      font-weight: 500;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--amarelo);
+      color: var(--preto-suave);
+      padding: 20px 48px;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all .25s;
+    }
+
+    .hero-cta:hover {
+      filter: brightness(.9);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(249, 196, 0, .4);
+    }
+
+    .hero-secondary {
+      display: block;
+      margin-top: 18px;
+      color: var(--branco);
+      font-size: 15px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      opacity: .8;
+      transition: opacity .2s;
+    }
+
+    .hero-secondary:hover {
+      opacity: 1;
+    }
+
+    .hero-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-mascote {
+      max-width: 360px;
+      width: 100%;
+      filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .4));
+    }
+
+    /* Mascot speech bubble */
+    .mascot-bubble {
+      position: absolute;
+      top: -20px;
+      right: -30px;
+      background: var(--branco);
+      color: var(--verde-escuro);
+      padding: 14px 22px;
+      border-radius: 16px;
+      border-bottom-left-radius: 4px;
+      font-weight: 700;
+      font-size: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .15);
+      max-width: 220px;
+      line-height: 1.4;
+      opacity: 0;
+    }
+
+    .mascot-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      border: 10px solid transparent;
+      border-top-color: var(--branco);
+      border-bottom: 0;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: var(--branco);
+      font-size: 28px;
+      animation: bounce-scroll 2s infinite;
+      opacity: .7;
+    }
+
+    @keyframes bounce-scroll {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(12px);
+      }
+    }
+
+    /* Floating leaves */
+    .floating-leaf {
+      position: fixed;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .06;
+      font-size: 32px;
+    }
+
+    /* TRUST BAR - Carousel */
+    .trust-bar {
+      background: var(--amarelo);
+      padding: 18px 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .trust-carousel {
+      display: flex;
+      gap: 48px;
+      white-space: nowrap;
+      animation: trust-scroll 25s linear infinite;
+      width: max-content;
+    }
+
+    .trust-carousel:hover {
+      animation-play-state: paused;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--preto-suave);
+      letter-spacing: .3px;
+      flex-shrink: 0;
+      padding: 4px 16px;
+      border-radius: 20px;
+      transition: all .3s;
+    }
+
+    .trust-item:hover {
+      background: rgba(26, 107, 0, .12);
+      transform: scale(1.05);
+    }
+
+    .trust-item .trust-emoji {
+      font-size: 22px;
+    }
+
+    @keyframes trust-scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* PRODUCT GALLERY */
+    .product-gallery {
+      padding: 80px 0;
+      background: var(--branco);
+      overflow: hidden;
+    }
+
+    .gallery-title-wrap {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 24px;
+      padding: 0 24px 24px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .gallery-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-item {
+      min-width: 300px;
+      max-width: 360px;
+      flex-shrink: 0;
+      scroll-snap-align: center;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--sombra-verde);
+      position: relative;
+      cursor: grab;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      transition: transform .5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item .gallery-badge {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: var(--amarelo);
+      color: var(--preto-suave);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .gallery-item .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(26, 107, 0, .7) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity .4s;
+      display: flex;
+      align-items: flex-end;
+      padding: 24px;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-overlay p {
+      color: var(--branco);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* Gallery nav arrows */
+    .gallery-nav {
+      text-align: center;
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .gallery-nav button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid var(--verde-escuro);
+      background: transparent;
+      color: var(--verde-escuro);
+      font-size: 20px;
+      cursor: pointer;
+      transition: all .25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gallery-nav button:hover {
+      background: var(--verde-escuro);
+      color: var(--branco);
+    }
+
+    .gallery-dots {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .gallery-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(26, 107, 0, .2);
+      transition: all .3s;
+      cursor: pointer;
+    }
+
+    .gallery-dot.active {
+      background: var(--verde-escuro);
+      transform: scale(1.3);
+    }
+
+    /* ABOUT */
+    .about {
+      padding: 100px 0;
+      background: var(--branco);
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--verde-escuro);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 48px;
+      color: var(--verde-escuro);
+      line-height: 1.1;
+      margin-bottom: 28px;
+      letter-spacing: 1px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: 17px;
+      color: #444;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .about-icons {
+      display: flex;
+      gap: 40px;
+      margin-top: 32px;
+    }
+
+    .about-icon-item {
+      text-align: center;
+      flex: 1;
+    }
+
+    .about-icon-item .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .about-icon-item h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--verde-escuro);
+      margin-bottom: 4px;
+    }
+
+    .about-icon-item p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .about-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+    }
+
+    /* Mascot communicator style */
+    .mascot-comm {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mascot-comm img {
+      max-width: 260px;
+      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, .2));
+    }
+
+    .mascot-speech {
+      background: var(--verde-escuro);
+      color: var(--branco);
+      padding: 20px 28px;
+      border-radius: 16px;
+      border-bottom-left-radius: 4px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.6;
+      position: relative;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 24px rgba(26, 107, 0, .25);
+      max-width: 340px;
+    }
+
+    .mascot-speech::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 30px;
+      border: 12px solid transparent;
+      border-top-color: var(--verde-escuro);
+      border-bottom: 0;
+    }
+
+    .mascot-speech strong {
+      color: var(--amarelo);
+    }
+
+    .about-quote {
+      background: var(--verde-escuro);
+      border: 2px solid var(--amarelo);
+      border-radius: 12px;
+      padding: 40px;
+      color: var(--branco);
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.7;
+      width: 100%;
+    }
+
+    .about-quote cite {
+      display: block;
+      margin-top: 16px;
+      font-style: normal;
+      font-weight: 700;
+      color: var(--amarelo);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    /* BENEFITS */
+    .benefits {
+      padding: 100px 0;
+      background: var(--cinza-claro);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .benefit-card {
+      background: var(--branco);
+      border-left: 4px solid var(--amarelo);
+      padding: 32px 28px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(26, 107, 0, .12);
+      transition: all .3s;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 36px rgba(26, 107, 0, .2);
+    }
+
+    .benefit-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--verde-escuro);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+      transition: transform .3s;
+    }
+
+    .benefit-card:hover .benefit-icon {
+      transform: rotate(15deg) scale(1.15);
+    }
+
+    .benefit-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--verde-escuro);
+      margin-bottom: 10px;
+      letter-spacing: .5px;
+    }
+
+    .benefit-card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* STATS */
+    .stats {
+      padding: 80px 0;
+      background: var(--verde-escuro);
+      position: relative;
+    }
+
+    .stats::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .stats>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats-title {
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 40px;
+      color: var(--branco);
+      margin-bottom: 48px;
+      letter-spacing: 2px;
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0 48px;
+      border-right: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    .stat-item:last-child {
+      border-right: none;
+    }
+
+    .stat-number {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 72px;
+      color: var(--amarelo);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--branco);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    .stat-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, .7);
+      margin-top: 8px;
+      font-weight: 400;
+    }
+
+    /* STEPS */
+    .steps {
+      padding: 100px 0;
+      background: var(--branco);
+    }
+
+    .steps-timeline {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 60px;
+      position: relative;
+    }
+
+    .steps-line {
+      position: absolute;
+      top: 36px;
+      left: 10%;
+      right: 10%;
+      height: 4px;
+      background: #e0e0e0;
+      border-radius: 2px;
+    }
+
+    .steps-line-fill {
+      height: 100%;
+      background: var(--verde-escuro);
+      width: 0%;
+      border-radius: 2px;
+      transition: width 1.2s ease;
+    }
+
+    .step-item {
+      text-align: center;
+      flex: 1;
+      position: relative;
+      z-index: 2;
+    }
+
+    .step-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--branco);
+      border: 4px solid var(--verde-escuro);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 4px 16px rgba(26, 107, 0, .15);
+      transition: all .4s;
+    }
+
+    .step-item:hover .step-icon {
+      background: var(--verde-escuro);
+      transform: scale(1.1);
+      box-shadow: 0 8px 24px rgba(26, 107, 0, .3);
+    }
+
+    .step-num {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 14px;
+      color: var(--amarelo);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--verde-escuro);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+
+    .steps-cta {
+      text-align: center;
+      margin-top: 56px;
+    }
+
+    .btn-yellow {
+      display: inline-block;
+      background: var(--amarelo);
+      color: var(--preto-suave);
+      padding: 18px 48px;
+      font-size: 17px;
+      font-weight: 700;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all .25s;
+    }
+
+    .btn-yellow:hover {
+      filter: brightness(.9);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(249, 196, 0, .35);
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      padding: 100px 0;
+      background: var(--cinza-claro);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .testimonial-card {
+      background: var(--branco);
+      padding: 36px 28px 28px;
+      border-radius: 8px;
+      border-bottom: 3px solid var(--verde-escuro);
+      position: relative;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .06);
+      transition: all .4s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px) rotate(-1deg);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, .12);
+    }
+
+    .testimonial-card::before {
+      content: '\201C';
+      font-family: 'Bebas Neue', cursive;
+      font-size: 80px;
+      color: var(--amarelo);
+      opacity: .2;
+      position: absolute;
+      top: 8px;
+      left: 20px;
+      line-height: 1;
+    }
+
+    .testimonial-stars {
+      color: var(--amarelo);
+      font-size: 16px;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-card blockquote {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-card cite {
+      font-style: normal;
+      font-weight: 700;
+      color: var(--verde-escuro);
+      font-size: 14px;
+      display: block;
+    }
+
+    .testimonial-card cite span {
+      font-weight: 400;
+      color: #888;
+      font-size: 13px;
+    }
+
+    .testimonials-footer {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .testimonials-footer p {
+      color: #666;
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid var(--verde-escuro);
+      color: var(--verde-escuro);
+      padding: 14px 36px;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: 8px;
+      transition: all .25s;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: var(--verde-escuro);
+      color: var(--branco);
+    }
+
+    /* YOUTUBE */
+    .youtube {
+      padding: 100px 0;
+      background: var(--verde-escuro);
+      position: relative;
+    }
+
+    .youtube::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: .06;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 10 C20 20 10 40 20 60 C30 50 40 30 40 10Z' fill='%23fff'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .youtube>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .youtube .section-tag {
+      color: var(--amarelo);
+    }
+
+    .youtube .section-title {
+      color: var(--branco);
+    }
+
+    .youtube-desc {
+      color: rgba(255, 255, 255, .8);
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    .youtube-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .video-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .video-card {
+      background: rgba(255, 255, 255, .1);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all .3s;
+    }
+
+    .video-card:hover {
+      background: rgba(255, 255, 255, .18);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, .3);
+    }
+
+    .video-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px 12px 0 0;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-card-info {
+      padding: 20px;
+    }
+
+    .video-card-info h4 {
+      color: var(--branco);
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .video-card-info span {
+      color: var(--amarelo);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* Mascot video section communicator */
+    .yt-mascot-wrap {
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .yt-mascot-wrap img {
+      width: 100px;
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, .3));
+    }
+
+    .yt-mascot-bubble {
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: var(--branco);
+      padding: 14px 20px;
+      border-radius: 14px;
+      border-bottom-left-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      position: relative;
+    }
+
+    .yt-mascot-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: -10px;
+      border: 10px solid transparent;
+      border-right-color: rgba(255, 255, 255, .15);
+      border-left: 0;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 100px 0;
+      background: var(--cinza-claro);
+    }
+
+    .accordion {
+      max-width: 800px;
+      margin: 48px auto 0;
+    }
+
+    .accordion-item {
+      background: var(--branco);
+      margin-bottom: 12px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+      transition: box-shadow .3s;
+    }
+
+    .accordion-item:hover {
+      box-shadow: 0 4px 16px rgba(26, 107, 0, .12);
+    }
+
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 28px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--verde-escuro);
+      transition: background .2s;
+      border: none;
+      background: transparent;
+      width: 100%;
+      text-align: left;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .accordion-header:hover {
+      background: rgba(26, 107, 0, .04);
+    }
+
+    .accordion-icon {
+      font-size: 24px;
+      color: var(--amarelo);
+      font-weight: 700;
+      transition: transform .35s;
+      flex-shrink: 0;
+    }
+
+    .accordion-item.active .accordion-icon {
+      transform: rotate(45deg);
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease;
+      background: #F9F9F9;
+    }
+
+    .accordion-body-inner {
+      padding: 0 28px 24px;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    /* CTA FINAL */
+    .cta-final {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #1A6B00, #2E7D32);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-final .cta-logo {
+      max-width: 200px;
+      margin: 0 auto 32px;
+      filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .3));
+    }
+
+    .cta-final h2 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 64px;
+      color: var(--branco);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .cta-final p {
+      color: rgba(255, 255, 255, .85);
+      font-size: 20px;
+      font-weight: 500;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .cta-mascot-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .cta-mascot-row img {
+      width: 120px;
+      filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .3));
+    }
+
+    .cta-mascot-row .cta-mascot-msg {
+      background: rgba(255, 255, 255, .15);
+      border: 1px solid rgba(255, 255, 255, .25);
+      color: var(--branco);
+      padding: 16px 24px;
+      border-radius: 16px;
+      border-bottom-left-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: left;
+      max-width: 360px;
+      position: relative;
+    }
+
+    .cta-mascot-row .cta-mascot-msg::after {
+      content: '';
+      position: absolute;
+      bottom: 12px;
+      left: -10px;
+      border: 10px solid transparent;
+      border-right-color: rgba(255, 255, 255, .15);
+      border-left: 0;
+    }
+
+    .cta-mega-btn {
+      display: inline-block;
+      background: var(--amarelo);
+      color: var(--preto-suave);
+      padding: 22px 64px;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all .25s;
+      animation: pulse-cta 2s infinite;
+      min-width: 480px;
+    }
+
+    .cta-mega-btn:hover {
+      filter: brightness(.9);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(249, 196, 0, .45);
+    }
+
+    @keyframes pulse-cta {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.04);
+      }
+    }
+
+    .cta-below {
+      margin-top: 20px;
+      color: rgba(255, 255, 255, .6);
+      font-size: 14px;
+    }
+
+    .trust-seals {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .trust-seal {
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .2);
+      padding: 10px 20px;
+      border-radius: 24px;
+      color: var(--branco);
+      font-size: 13px;
+      font-weight: 600;
+      transition: all .3s;
+    }
+
+    .trust-seal:hover {
+      background: rgba(255, 255, 255, .25);
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--preto-suave);
+      padding: 64px 0 0;
+      color: rgba(255, 255, 255, .7);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .footer h3 {
+      font-family: 'Bebas Neue', cursive;
+      color: var(--branco);
+      font-size: 22px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand .footer-logo {
+      height: 80px;
+      width: auto;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, .3));
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-socials a {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s;
+      color: var(--branco);
+    }
+
+    .footer-socials a:hover {
+      border-color: var(--amarelo);
+      color: var(--amarelo);
+      transform: translateY(-3px);
+    }
+
+    .footer-socials a svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .footer-nav a {
+      display: block;
+      font-size: 14px;
+      padding: 6px 0;
+      transition: color .2s, padding-left .2s;
+    }
+
+    .footer-nav a:hover {
+      color: var(--amarelo);
+      padding-left: 8px;
+    }
+
+    .footer-contact p {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .footer-contact .btn-yellow {
+      padding: 12px 28px;
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 24px 0;
+      font-size: 13px;
+      color: rgba(255, 255, 255, .4);
+    }
+
+    /* WHATSAPP FLOAT */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      width: 64px;
+      height: 64px;
+      background: var(--whatsapp);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, .5);
+      transition: transform .2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float::before {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 50%;
+      border: 2px solid var(--whatsapp);
+      animation: ripple 2s ease-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes ripple {
+      0% {
+        inset: -8px;
+        opacity: 1;
+      }
+
+      100% {
+        inset: -28px;
+        opacity: 0;
+      }
+    }
+
+    .whatsapp-float svg {
+      width: 32px;
+      height: 32px;
+      fill: var(--branco);
+    }
+
+    .whatsapp-tooltip {
+      position: absolute;
+      right: 76px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--verde-escuro);
+      color: var(--branco);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s;
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+      opacity: 1;
+    }
+
+    /* MOBILE CTA FIXED */
+    .mobile-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 997;
+      padding: 12px 16px;
+      background: var(--verde-escuro);
+      border-top: 2px solid var(--amarelo);
+    }
+
+    .mobile-cta-bar a {
+      display: block;
+      background: var(--amarelo);
+      color: var(--preto-suave);
+      text-align: center;
+      padding: 16px;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    /* Text reveal for GSAP */
+    .split-line {
+      overflow: hidden;
+      display: block;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+      .hero h1 {
+        font-size: 56px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-visual {
+        order: -1;
+        margin-bottom: 20px;
+      }
+
+      .hero-mascote {
+        max-width: 280px;
+      }
+
+      .hero-logo-img {
+        width: 180px;
+        margin: 0 auto;
+      }
+
+      .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+
+      .stat-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        padding: 24px 0;
+        width: 45%;
+      }
+
+      .stat-item:last-child {
+        border-bottom: none;
+      }
+
+      .cta-mega-btn {
+        min-width: auto;
+        width: 100%;
+        max-width: 480px;
+      }
+
+      .gallery-item {
+        min-width: 260px;
+      }
+
+      .mascot-bubble {
+        right: -10px;
+        top: -30px;
+      }
+    }
+
+    @media(max-width:768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero h1 {
+        font-size: 44px;
+      }
+
+      .hero-sub {
+        font-size: 17px;
+      }
+
+      .hero-cta {
+        padding: 16px 32px;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .hero-logo-img {
+        width: 160px;
+      }
+
+      .section-title {
+        font-size: 36px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-icons {
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .stat-item {
+        width: 100%;
+        padding: 20px 0;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+      }
+
+      .stat-number {
+        font-size: 56px;
+      }
+
+      .steps-timeline {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .steps-line {
+        display: none;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .youtube-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-final h2 {
+        font-size: 40px;
+      }
+
+      .cta-mega-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 20px 24px;
+        font-size: 17px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mobile-cta-bar {
+        display: block;
+      }
+
+      .whatsapp-float {
+        bottom: 88px;
+      }
+
+      .gallery-item {
+        min-width: 260px;
+        max-width: 300px;
+      }
+
+      .gallery-item img {
+        height: 240px;
+      }
+
+      .cta-mascot-row {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .cta-mascot-row .cta-mascot-msg::after {
+        display: none;
+      }
+
+      .yt-mascot-wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .yt-mascot-bubble::after {
+        display: none;
+      }
+
+      .mascot-bubble {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 12px;
+      }
+
+      .mascot-bubble::after {
+        display: none;
+      }
+    }
+
+    @media(max-width:480px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .stats-title {
+        font-size: 30px;
+      }
+    }
+
+    *:focus-visible {
+      outline: 2px solid var(--amarelo);
+      outline-offset: 2px;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .img-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-shimmer::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .15), transparent);
+      background-size: 200% 100%;
+      animation: shimmer 3s ease-in-out infinite;
+      pointer-events: none;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-<div class="container nav-inner">
-<a href="#" class="nav-logo">
-<img src="images/logo.png" alt="Limãozinho Bravo Logo" loading="lazy">
-LIMÃOZINHO BRAVO
-</a>
-<div class="nav-links">
-<a href="#sobre">Sobre</a>
-<a href="#beneficios">Benefícios</a>
-<a href="#como-funciona">Como Funciona</a>
-<a href="#depoimentos">Depoimentos</a>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="nav-cta" aria-label="Falar no WhatsApp">📲 Falar no WhatsApp</a>
-</div>
-<button class="hamburger" id="hamburger" aria-label="Abrir menu">
-<span></span><span></span><span></span>
-</button>
-</div>
-</nav>
-<div class="mobile-overlay" id="mobileOverlay"></div>
-<div class="mobile-menu" id="mobileMenu">
-<a href="#sobre" class="mobile-link">Sobre</a>
-<a href="#beneficios" class="mobile-link">Benefícios</a>
-<a href="#como-funciona" class="mobile-link">Como Funciona</a>
-<a href="#depoimentos" class="mobile-link">Depoimentos</a>
-<a href="#faq" class="mobile-link">Perguntas Frequentes</a>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="nav-cta" style="margin-top:16px;text-align:center;">📲 Falar no WhatsApp</a>
-</div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="Limãozinho Bravo Logo" loading="lazy">
+        LIMÃOZINHO BRAVO
+      </a>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+          target="_blank" class="nav-cta" aria-label="Falar no WhatsApp">📲 Falar no WhatsApp</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre" class="mobile-link">Sobre</a>
+    <a href="#beneficios" class="mobile-link">Benefícios</a>
+    <a href="#como-funciona" class="mobile-link">Como Funciona</a>
+    <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+    <a href="#faq" class="mobile-link">Perguntas Frequentes</a>
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+      target="_blank" class="nav-cta" style="margin-top:16px;text-align:center;">📲 Falar no WhatsApp</a>
+  </div>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-<div class="container hero-grid">
-<div>
-<div class="hero-badge anim-hidden">🌿 ESPECIALISTAS EM CERCAS VIVAS COM LIMÃOZINHO BRAVO</div>
-<h1 class="hero-title-clip">A CERCA VIVA QUE<br>PRODUZ DE VERDADE.</h1>
-<p class="hero-sub anim-hidden">Mudas selecionadas de Limãozinho Bravo: a planta ideal para cercas vivas densas, duráveis e de baixa manutenção. Entrega para todo o Brasil.</p>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="hero-cta" aria-label="Quero comprar minhas mudas no WhatsApp">📲 QUERO COMPRAR MINHAS MUDAS</a>
-<a href="#como-funciona" class="hero-secondary">▶ Ver como funciona</a>
-</div>
-<div class="hero-visual">
-<img src="images/mascote.png" alt="Mascote Limãozinho Bravo - personagem animado segurando uma muda" class="hero-mascote" loading="eager">
-</div>
-</div>
-<div class="scroll-indicator" aria-hidden="true">↓</div>
-</section>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-logo-wrap">
+          <img src="images/logo.png" alt="Limãozinho Bravo Logo" class="hero-logo-img" loading="eager">
+        </div>
+        <div class="hero-badge" id="heroBadge">🌿 ESPECIALISTAS EM CERCAS VIVAS COM LIMÃOZINHO BRAVO</div>
+        <h1 id="heroTitle">A CERCA VIVA QUE<br>PRODUZ DE VERDADE.</h1>
+        <p class="hero-sub" id="heroSub">Mudas selecionadas de Limãozinho Bravo: a planta ideal para cercas vivas
+          densas, duráveis e de baixa manutenção. Entrega para todo o Brasil.</p>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+          target="_blank" class="hero-cta" id="heroCta" aria-label="Quero comprar minhas mudas no WhatsApp">📲 QUERO
+          COMPRAR MINHAS MUDAS</a>
+        <a href="#como-funciona" class="hero-secondary" id="heroSecondary">▶ Ver como funciona</a>
+      </div>
+      <div class="hero-visual">
+        <div class="mascot-bubble" id="mascotBubble">💪 Eu garanto: sua cerca vai ficar BRABA!</div>
+        <img src="images/mascote.png" alt="Mascote Limãozinho Bravo" class="hero-mascote" id="heroMascote"
+          loading="eager">
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">↓</div>
+  </section>
 
-<!-- TRUST BAR -->
-<section class="trust-bar">
-<div class="container">
-<div class="trust-items">
-<span>✅ Pedido mínimo: 100 mudas</span><span class="trust-sep">|</span>
-<span>🚚 Entrega para todo o Brasil</span><span class="trust-sep">|</span>
-<span>📹 Suporte técnico em vídeo</span><span class="trust-sep">|</span>
-<span>📸 Fotos reais do produto</span><span class="trust-sep">|</span>
-<span>🌿 5 mudas por metro linear</span>
-<span>✅ Pedido mínimo: 100 mudas</span><span class="trust-sep">|</span>
-<span>🚚 Entrega para todo o Brasil</span><span class="trust-sep">|</span>
-<span>📹 Suporte técnico em vídeo</span><span class="trust-sep">|</span>
-<span>📸 Fotos reais do produto</span><span class="trust-sep">|</span>
-<span>🌿 5 mudas por metro linear</span>
-</div>
-</div>
-</section>
+  <!-- TRUST BAR - Carousel -->
+  <section class="trust-bar">
+    <div class="trust-carousel" id="trustCarousel">
+      <div class="trust-item"><span class="trust-emoji">✅</span> Pedido mínimo: 100 mudas</div>
+      <div class="trust-item"><span class="trust-emoji">🚚</span> Entrega para todo o Brasil</div>
+      <div class="trust-item"><span class="trust-emoji">📹</span> Suporte técnico em vídeo</div>
+      <div class="trust-item"><span class="trust-emoji">📸</span> Fotos reais do produto</div>
+      <div class="trust-item"><span class="trust-emoji">🌿</span> 5 mudas por metro linear</div>
+      <div class="trust-item"><span class="trust-emoji">🤝</span> Atendimento consultivo</div>
+      <div class="trust-item"><span class="trust-emoji">🏆</span> Qualidade comprovada</div>
+      <div class="trust-item"><span class="trust-emoji">⚡</span> Resposta rápida</div>
+      <!-- Duplicated for seamless loop -->
+      <div class="trust-item"><span class="trust-emoji">✅</span> Pedido mínimo: 100 mudas</div>
+      <div class="trust-item"><span class="trust-emoji">🚚</span> Entrega para todo o Brasil</div>
+      <div class="trust-item"><span class="trust-emoji">📹</span> Suporte técnico em vídeo</div>
+      <div class="trust-item"><span class="trust-emoji">📸</span> Fotos reais do produto</div>
+      <div class="trust-item"><span class="trust-emoji">🌿</span> 5 mudas por metro linear</div>
+      <div class="trust-item"><span class="trust-emoji">🤝</span> Atendimento consultivo</div>
+      <div class="trust-item"><span class="trust-emoji">🏆</span> Qualidade comprovada</div>
+      <div class="trust-item"><span class="trust-emoji">⚡</span> Resposta rápida</div>
+    </div>
+  </section>
 
-<!-- PRODUCT GALLERY - Fotos Reais -->
-<section class="product-gallery" id="galeria">
-<div class="container">
-<div class="gallery-title-wrap">
-<span class="section-tag anim-hidden">📸 FOTOS REAIS DO NOSSO PRODUTO</span>
-<h2 class="section-title anim-hidden">VEJA O QUE VOCÊ VAI RECEBER</h2>
-</div>
-</div>
-<div class="gallery-scroll">
-<div class="gallery-item anim-scale img-shimmer">
-<img src="images/mudas-1.png" alt="Mudas de Limãozinho Bravo com raízes saudáveis" loading="lazy">
-<span class="gallery-badge">📸 FOTO REAL</span>
-</div>
-<div class="gallery-item anim-scale img-shimmer">
-<img src="images/mudas-2.png" alt="Mudas de Limãozinho Bravo prontas para envio" loading="lazy">
-<span class="gallery-badge">🌿 QUALIDADE COMPROVADA</span>
-</div>
-<div class="gallery-item anim-scale img-shimmer">
-<img src="images/mudas-1.png" alt="Detalhe das raízes das mudas de Limãozinho Bravo" loading="lazy">
-<span class="gallery-badge">🌱 RAÍZES FORTES</span>
-</div>
-<div class="gallery-item anim-scale img-shimmer">
-<img src="images/mudas-2.png" alt="Lote de mudas de Limãozinho Bravo embaladas" loading="lazy">
-<span class="gallery-badge">🚚 PRONTO PRA ENVIO</span>
-</div>
-</div>
-</section>
+  <!-- PRODUCT GALLERY -->
+  <section class="product-gallery" id="galeria">
+    <div class="container">
+      <div class="gallery-title-wrap">
+        <span class="section-tag">📸 FOTOS REAIS DO NOSSO PRODUTO</span>
+        <h2 class="section-title">VEJA O QUE VOCÊ VAI RECEBER</h2>
+      </div>
+    </div>
+    <div class="gallery-track" id="galleryTrack">
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-1.png" alt="Mudas de Limãozinho Bravo com raízes saudáveis" loading="lazy">
+        <span class="gallery-badge">📸 FOTO REAL</span>
+        <div class="gallery-overlay">
+          <p>Mudas selecionadas com raízes fortes e saudáveis</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-2.png" alt="Mudas de Limãozinho Bravo prontas para envio" loading="lazy">
+        <span class="gallery-badge">🌿 QUALIDADE COMPROVADA</span>
+        <div class="gallery-overlay">
+          <p>Prontas para envio — embalagem cuidadosa</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-1.png" alt="Detalhe das raízes" loading="lazy">
+        <span class="gallery-badge">🌱 RAÍZES FORTES</span>
+        <div class="gallery-overlay">
+          <p>Raízes vigorosas para pega rápida no solo</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-2.png" alt="Lote de mudas embaladas" loading="lazy">
+        <span class="gallery-badge">🚚 PRONTO PRA ENVIO</span>
+        <div class="gallery-overlay">
+          <p>Lote organizado e protegido para transporte</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-1.png" alt="Mudas selecionadas Limãozinho Bravo" loading="lazy">
+        <span class="gallery-badge">⭐ SELEÇÃO PREMIUM</span>
+        <div class="gallery-overlay">
+          <p>Cada muda passa por seleção rigorosa de qualidade</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-2.png" alt="Mudas para cerca viva" loading="lazy">
+        <span class="gallery-badge">🛡️ CERCA DENSA</span>
+        <div class="gallery-overlay">
+          <p>Resultado comprovado: cerca densa e impenetrável</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-1.png" alt="Qualidade das mudas" loading="lazy">
+        <span class="gallery-badge">💚 DO CAMPO PRA VOCÊ</span>
+        <div class="gallery-overlay">
+          <p>Direto do produtor, com garantia de qualidade</p>
+        </div>
+      </div>
+      <div class="gallery-item img-shimmer">
+        <img src="images/mudas-2.png" alt="Embalagem de mudas" loading="lazy">
+        <span class="gallery-badge">📦 BEM EMBALADO</span>
+        <div class="gallery-overlay">
+          <p>Embalagem técnica que preserva a qualidade da muda</p>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-nav container">
+      <button id="galleryPrev" aria-label="Anterior">←</button>
+      <div class="gallery-dots" id="galleryDots"></div>
+      <button id="galleryNext" aria-label="Próximo">→</button>
+    </div>
+  </section>
 
-<!-- ABOUT -->
-<section class="about" id="sobre">
-<div class="container">
-<div class="about-grid">
-<div class="about-text">
-<span class="section-tag anim-hidden">QUEM SOMOS</span>
-<h2 class="section-title anim-hidden">NÃO VENDEMOS APENAS MUDAS.<br>ENTREGAMOS CERCA VIVA DE VERDADE.</h2>
-<p class="anim-hidden">A Limãozinho Bravo nasceu da paixão pelo campo e do compromisso com o produtor brasileiro. Aqui você não compra uma muda e fica sozinho — você recebe suporte técnico real, orientação de plantio e um parceiro que quer ver a sua propriedade protegida e produtiva.</p>
-<p class="anim-hidden">O Limãozinho Bravo é uma planta robusta, de crescimento rápido e alta densidade de galhos, formando cercas vivas impenetráveis, naturais e bonitas. Nosso mascote representa exatamente quem somos: um especialista de campo, de macacão e com a pá na mão. Trabalhamos de verdade, mostramos o produto real e falamos a língua do produtor.</p>
-<div class="about-icons anim-hidden">
-<div class="about-icon-item">
-<div class="icon">🌱</div>
-<h4>Mudas selecionadas</h4>
-<p>com qualidade comprovada</p>
-</div>
-<div class="about-icon-item">
-<div class="icon">📹</div>
-<h4>Vídeos técnicos</h4>
-<p>para você plantar do jeito certo</p>
-</div>
-<div class="about-icon-item">
-<div class="icon">📸</div>
-<h4>Fotos reais</h4>
-<p>sem filtro, sem enganação</p>
-</div>
-</div>
-</div>
-<div class="about-visual">
-<img src="images/mascote.png" alt="Mascote Limãozinho Bravo" class="about-mascote-img anim-rotate" loading="lazy">
-<div class="about-quote anim-right">
-"Cada muda entregue carrega o nosso compromisso com a sua propriedade."
-<cite>— Limãozinho Bravo</cite>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- ABOUT -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">QUEM SOMOS</span>
+          <h2 class="section-title">NÃO VENDEMOS APENAS MUDAS.<br>ENTREGAMOS CERCA VIVA DE VERDADE.</h2>
+          <p>A Limãozinho Bravo nasceu da paixão pelo campo e do compromisso com o produtor brasileiro. Aqui você não
+            compra uma muda e fica sozinho — você recebe suporte técnico real, orientação de plantio e um parceiro que
+            quer ver a sua propriedade protegida e produtiva.</p>
+          <p>O Limãozinho Bravo é uma planta robusta, de crescimento rápido e alta densidade de galhos, formando cercas
+            vivas impenetráveis, naturais e bonitas. Nosso mascote representa exatamente quem somos: um especialista de
+            campo, de macacão e com a pá na mão.</p>
+          <div class="about-icons">
+            <div class="about-icon-item">
+              <div class="icon">🌱</div>
+              <h4>Mudas selecionadas</h4>
+              <p>com qualidade comprovada</p>
+            </div>
+            <div class="about-icon-item">
+              <div class="icon">📹</div>
+              <h4>Vídeos técnicos</h4>
+              <p>para você plantar do jeito certo</p>
+            </div>
+            <div class="about-icon-item">
+              <div class="icon">📸</div>
+              <h4>Fotos reais</h4>
+              <p>sem filtro, sem enganação</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="mascot-comm" id="mascotComm">
+            <div class="mascot-speech" id="mascotSpeech">
+              Olha, eu sou o <strong>Limãozinho Bravo</strong> e tô aqui pra te garantir: cada muda que sai daqui é
+              <strong>selecionada com carinho e responsabilidade</strong>. Sem conversa mole! 🌿
+            </div>
+            <img src="images/mascote.png" alt="Mascote Limãozinho Bravo comunicando" loading="lazy">
+          </div>
+          <div class="about-quote">
+            "Cada muda entregue carrega o nosso compromisso com a sua propriedade."
+            <cite>— Limãozinho Bravo</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- BENEFITS -->
-<section class="benefits" id="beneficios">
-<div class="container">
-<div style="text-align:center;">
-<span class="section-tag anim-hidden">POR QUE ESCOLHER A LIMÃOZINHO BRAVO?</span>
-<h2 class="section-title anim-hidden">6 RAZÕES QUE FAZEM A DIFERENÇA<br>NA SUA PROPRIEDADE</h2>
-</div>
-<div class="benefits-grid">
-<div class="benefit-card anim-hidden"><div class="benefit-icon">🌿</div><h3>PLANTA ROBUSTA E COMPROVADA</h3><p>O Limãozinho Bravo é reconhecido pela sua resistência, crescimento rápido e alta densidade de galhos — ideal para cercas vivas eficientes e duráveis.</p></div>
-<div class="benefit-card anim-hidden"><div class="benefit-icon">🛡️</div><h3>CERCA VIVA IMPENETRÁVEL</h3><p>Com 5 mudas por metro linear, a cerca formada pelo Limãozinho Bravo cria uma barreira natural densa, que dificulta a passagem de animais e invasores.</p></div>
-<div class="benefit-card anim-hidden"><div class="benefit-icon">📹</div><h3>SUPORTE EM VÍDEO</h3><p>Publicamos tutoriais completos ensinando como manusear e plantar corretamente. Você nunca fica na dúvida.</p></div>
-<div class="benefit-card anim-hidden"><div class="benefit-icon">📸</div><h3>FOTOS REAIS DO PRODUTO</h3><p>Mostramos exatamente o que você vai receber. Transparência total, do campo até a sua porta.</p></div>
-<div class="benefit-card anim-hidden"><div class="benefit-icon">🤝</div><h3>ATENDIMENTO CONSULTIVO</h3><p>Nosso atendimento vai além da venda. Te orientamos sobre espaçamento, quantidade, cuidados pós-plantio e formação correta da cerca viva.</p></div>
-<div class="benefit-card anim-hidden"><div class="benefit-icon">🚚</div><h3>ENTREGA PARA TODO O BRASIL</h3><p>O frete é calculado conforme quantidade, tamanho e cidade. Você recebe um orçamento personalizado.</p></div>
-</div>
-</div>
-</section>
+  <!-- BENEFITS -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="section-tag">POR QUE ESCOLHER A LIMÃOZINHO BRAVO?</span>
+        <h2 class="section-title">6 RAZÕES QUE FAZEM A DIFERENÇA<br>NA SUA PROPRIEDADE</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🌿</div>
+          <h3>PLANTA ROBUSTA E COMPROVADA</h3>
+          <p>O Limãozinho Bravo é reconhecido pela sua resistência, crescimento rápido e alta densidade de galhos —
+            ideal para cercas vivas eficientes e duráveis.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3>CERCA VIVA IMPENETRÁVEL</h3>
+          <p>Com 5 mudas por metro linear, a cerca formada pelo Limãozinho Bravo cria uma barreira natural densa, que
+            dificulta a passagem de animais e invasores.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📹</div>
+          <h3>SUPORTE EM VÍDEO</h3>
+          <p>Publicamos tutoriais completos ensinando como manusear e plantar corretamente. Você nunca fica na dúvida.
+          </p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📸</div>
+          <h3>FOTOS REAIS DO PRODUTO</h3>
+          <p>Mostramos exatamente o que você vai receber. Transparência total, do campo até a sua porta.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🤝</div>
+          <h3>ATENDIMENTO CONSULTIVO</h3>
+          <p>Nosso atendimento vai além da venda. Te orientamos sobre espaçamento, quantidade, cuidados pós-plantio e
+            formação correta da cerca viva.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🚚</div>
+          <h3>ENTREGA PARA TODO O BRASIL</h3>
+          <p>O frete é calculado conforme quantidade, tamanho e cidade. Você recebe um orçamento personalizado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- STATS -->
-<section class="stats" id="numeros">
-<div class="container">
-<h2 class="stats-title anim-hidden">NÚMEROS QUE COMPROVAM</h2>
-<div class="stats-grid">
-<div class="stat-item anim-hidden"><div class="stat-number" data-target="100">0</div><div class="stat-label">MUDAS POR PEDIDO</div><div class="stat-desc">(mínimo)</div></div>
-<div class="stat-item anim-hidden"><div class="stat-number" data-target="5">0</div><div class="stat-label">MUDAS POR METRO LINEAR</div><div class="stat-desc">Cerca densa e impenetrável</div></div>
-<div class="stat-item anim-hidden"><div class="stat-number" data-target="0.20" data-decimal="true">0</div><div class="stat-label">ESPAÇAMENTO ENTRE MUDAS</div><div class="stat-desc">Orientação técnica inclusa</div></div>
-<div class="stat-item anim-hidden"><div class="stat-number">🇧🇷</div><div class="stat-label">TODO O BRASIL RECEBE</div><div class="stat-desc">Entregamos de norte a sul</div></div>
-</div>
-</div>
-</section>
+  <!-- STATS -->
+  <section class="stats" id="numeros">
+    <div class="container">
+      <h2 class="stats-title">NÚMEROS QUE COMPROVAM</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-label">MUDAS POR PEDIDO</div>
+          <div class="stat-desc">(mínimo)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">MUDAS POR METRO LINEAR</div>
+          <div class="stat-desc">Cerca densa e impenetrável</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="0.20" data-decimal="true">0</div>
+          <div class="stat-label">ESPAÇAMENTO ENTRE MUDAS</div>
+          <div class="stat-desc">Orientação técnica inclusa</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">🇧🇷</div>
+          <div class="stat-label">TODO O BRASIL RECEBE</div>
+          <div class="stat-desc">Entregamos de norte a sul</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- STEPS -->
-<section class="steps" id="como-funciona">
-<div class="container">
-<div style="text-align:center;">
-<span class="section-tag anim-hidden">SIMPLES E TRANSPARENTE</span>
-<h2 class="section-title anim-hidden">DO PEDIDO À SUA PROPRIEDADE<br>EM 4 PASSOS</h2>
-</div>
-<div class="steps-timeline">
-<div class="steps-line"><div class="steps-line-fill" id="stepsLineFill"></div></div>
-<div class="step-item anim-hidden"><div class="step-icon">💬</div><div class="step-num">PASSO 1</div><div class="step-title">FALE CONOSCO NO WHATSAPP</div><div class="step-desc">Tire suas dúvidas, receba o orçamento personalizado e alinhe os detalhes.</div></div>
-<div class="step-item anim-hidden"><div class="step-icon">📋</div><div class="step-num">PASSO 2</div><div class="step-title">FAÇA SEU PEDIDO</div><div class="step-desc">Mínimo de 100 unidades. Frete sob consulta conforme sua necessidade.</div></div>
-<div class="step-item anim-hidden"><div class="step-icon">🚚</div><div class="step-num">PASSO 3</div><div class="step-title">RECEBA EM CASA</div><div class="step-desc">Entrega calculada por quantidade, tamanho e cidade.</div></div>
-<div class="step-item anim-hidden"><div class="step-icon">🌿</div><div class="step-num">PASSO 4</div><div class="step-title">PLANTE SUA CERCA VIVA</div><div class="step-desc">Acesse nossos vídeos e plante do jeito certo. Estamos aqui se precisar.</div></div>
-</div>
-<div class="steps-cta">
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="btn-yellow" aria-label="Iniciar pedido no WhatsApp">📲 INICIAR MEU PEDIDO AGORA</a>
-</div>
-</div>
-</section>
+  <!-- STEPS -->
+  <section class="steps" id="como-funciona">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="section-tag">SIMPLES E TRANSPARENTE</span>
+        <h2 class="section-title">DO PEDIDO À SUA PROPRIEDADE<br>EM 4 PASSOS</h2>
+      </div>
+      <div class="steps-timeline">
+        <div class="steps-line">
+          <div class="steps-line-fill" id="stepsLineFill"></div>
+        </div>
+        <div class="step-item">
+          <div class="step-icon">💬</div>
+          <div class="step-num">PASSO 1</div>
+          <div class="step-title">FALE CONOSCO NO WHATSAPP</div>
+          <div class="step-desc">Tire suas dúvidas, receba o orçamento personalizado e alinhe os detalhes.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-icon">📋</div>
+          <div class="step-num">PASSO 2</div>
+          <div class="step-title">FAÇA SEU PEDIDO</div>
+          <div class="step-desc">Mínimo de 100 unidades. Frete sob consulta conforme sua necessidade.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-icon">🚚</div>
+          <div class="step-num">PASSO 3</div>
+          <div class="step-title">RECEBA EM CASA</div>
+          <div class="step-desc">Entrega calculada por quantidade, tamanho e cidade.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-icon">🌿</div>
+          <div class="step-num">PASSO 4</div>
+          <div class="step-title">PLANTE SUA CERCA VIVA</div>
+          <div class="step-desc">Acesse nossos vídeos e plante do jeito certo. Estamos aqui se precisar.</div>
+        </div>
+      </div>
+      <div class="steps-cta">
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+          target="_blank" class="btn-yellow" aria-label="Iniciar pedido no WhatsApp">📲 INICIAR MEU PEDIDO AGORA</a>
+      </div>
+    </div>
+  </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials" id="depoimentos">
-<div class="container">
-<div style="text-align:center;">
-<span class="section-tag anim-hidden">O QUE DIZEM NOSSOS CLIENTES</span>
-<h2 class="section-title anim-hidden">QUEM JÁ COMPROU NÃO PARA<br>DE COMPRAR</h2>
-</div>
-<div class="testimonials-grid">
-<div class="testimonial-card anim-hidden"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><blockquote>"Comprei 300 mudas para cercar o pasto e fiquei impressionado com a qualidade. Todas chegaram perfeitas e o suporte por vídeo foi fundamental pra eu não errar no plantio. A cerca ficou linda e densa!"</blockquote><cite>João M. <span>— Produtor Rural, Goiás</span></cite></div>
-<div class="testimonial-card anim-hidden"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><blockquote>"Transparência total. A foto que recebi antes era exatamente o que chegou aqui. Nunca vi uma planta crescer tão rápido e fechar tão bem. Isso faz toda a diferença pra quem compra a distância."</blockquote><cite>Carlos R. <span>— Fazendeiro, Minas Gerais</span></cite></div>
-<div class="testimonial-card anim-hidden"><div class="testimonial-stars">⭐⭐⭐⭐⭐</div><blockquote>"Atendimento diferenciado. Me orientaram em tudo, do espaçamento ao pós-plantio. Em menos de um ano já tenho uma cerca natural firme e bonita na minha propriedade."</blockquote><cite>Ana P. <span>— Pequena Produtora, São Paulo</span></cite></div>
-</div>
-<div class="testimonials-footer">
-<p>📸 Trabalhamos com fotos reais dos nossos produtos — porque acreditamos que transparência não é diferencial, é obrigação.</p>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="btn-outline" aria-label="Ver mais exemplos no WhatsApp">📲 QUERO VER MAIS EXEMPLOS →</a>
-</div>
-</div>
-</section>
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div style="text-align:center;">
+        <span class="section-tag">O QUE DIZEM NOSSOS CLIENTES</span>
+        <h2 class="section-title">QUEM JÁ COMPROU NÃO PARA<br>DE COMPRAR</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Comprei 300 mudas para cercar o pasto e fiquei impressionado com a qualidade. Todas chegaram
+            perfeitas e o suporte por vídeo foi fundamental pra eu não errar no plantio. A cerca ficou linda e densa!"
+          </blockquote><cite>João M. <span>— Produtor Rural, Goiás</span></cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Transparência total. A foto que recebi antes era exatamente o que chegou aqui. Nunca vi uma
+            planta crescer tão rápido e fechar tão bem."</blockquote><cite>Carlos R. <span>— Fazendeiro, Minas
+              Gerais</span></cite>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Atendimento diferenciado. Me orientaram em tudo, do espaçamento ao pós-plantio. Em menos de um
+            ano já tenho uma cerca natural firme e bonita."</blockquote><cite>Ana P. <span>— Pequena Produtora, São
+              Paulo</span></cite>
+        </div>
+      </div>
+      <div class="testimonials-footer">
+        <p>📸 Trabalhamos com fotos reais dos nossos produtos — porque acreditamos que transparência não é diferencial,
+          é obrigação.</p>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+          target="_blank" class="btn-outline" aria-label="Ver mais exemplos no WhatsApp">📲 QUERO VER MAIS EXEMPLOS
+          →</a>
+      </div>
+    </div>
+  </section>
 
-<!-- YOUTUBE -->
-<section class="youtube" id="videos">
-<div class="container youtube-grid">
-<div>
-<span class="section-tag anim-hidden">MAIS DO QUE VENDER, ENSINAMOS</span>
-<h2 class="section-title anim-hidden">SEU SUCESSO COMEÇA<br>ANTES DO PLANTIO</h2>
-<p class="youtube-desc anim-hidden">Publicamos vídeos técnicos ensinando como manusear corretamente as mudas após o recebimento e como formar uma cerca viva perfeita com o Limãozinho Bravo. Porque acreditamos que um cliente bem orientado é um cliente satisfeito.</p>
-</div>
-<div class="video-cards">
-<div class="video-card anim-right">
-<div class="video-embed">
-<iframe src="https://www.youtube.com/embed/VsDY3x3cIlM" title="Como receber e manusear sua muda de Limãozinho Bravo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-</div>
-<div class="video-card-info">
-<h4>🎬 Como receber e manusear sua muda de Limãozinho Bravo</h4>
-<span>▶ Assistir no YouTube</span>
-</div>
-</div>
-<div class="video-card anim-right">
-<div class="video-embed">
-<iframe src="https://www.youtube.com/embed/vNLu9UFqrMk" title="Como plantar a cerca viva perfeita — passo a passo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-</div>
-<div class="video-card-info">
-<h4>🎬 Como plantar a cerca viva perfeita — passo a passo</h4>
-<span>▶ Assistir no YouTube</span>
-</div>
-</div>
-</div>
-</div>
-</section>
+  <!-- YOUTUBE -->
+  <section class="youtube" id="videos">
+    <div class="container youtube-grid">
+      <div>
+        <span class="section-tag">MAIS DO QUE VENDER, ENSINAMOS</span>
+        <h2 class="section-title">SEU SUCESSO COMEÇA<br>ANTES DO PLANTIO</h2>
+        <p class="youtube-desc">Publicamos vídeos técnicos ensinando como manusear corretamente as mudas após o
+          recebimento e como formar uma cerca viva perfeita com o Limãozinho Bravo.</p>
+        <div class="yt-mascot-wrap">
+          <img src="images/mascote.png" alt="Mascote" loading="lazy">
+          <div class="yt-mascot-bubble">Assiste aí! Fiz esses vídeos pra você não ter erro nenhum no plantio. É só
+            seguir o passo a passo! 🎬</div>
+        </div>
+      </div>
+      <div class="video-cards">
+        <div class="video-card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/VsDY3x3cIlM"
+              title="Como receber e manusear sua muda de Limãozinho Bravo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-card-info">
+            <h4>🎬 Como receber e manusear sua muda de Limãozinho Bravo</h4>
+            <span>▶ Assistir no YouTube</span>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/vNLu9UFqrMk"
+              title="Como plantar a cerca viva perfeita — passo a passo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-card-info">
+            <h4>🎬 Como plantar a cerca viva perfeita — passo a passo</h4>
+            <span>▶ Assistir no YouTube</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- FAQ -->
-<section class="faq" id="faq">
-<div class="container">
-<div style="text-align:center;">
-<h2 class="section-title anim-hidden">TUDO QUE VOCÊ PRECISA SABER</h2>
-</div>
-<div class="accordion">
-<div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Qual o pedido mínimo? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">O pedido mínimo é de 100 unidades. Esse volume garante qualidade no transporte e viabilidade logística para a sua entrega.</div></div></div>
-<div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Qual o espaçamento ideal para formar a cerca viva? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Recomendamos 0,20 m entre cada muda, o que corresponde a 5 mudas por metro linear. Esse espaçamento é ideal para que as plantas se fechem rapidamente e formem uma cerca densa e impenetrável.</div></div></div>
-<div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Como é calculado o frete? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">O frete é calculado de acordo com a quantidade de mudas, o tamanho do pedido e a cidade de entrega. Entre em contato para receber um orçamento personalizado.</div></div></div>
-<div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Qual o valor por muda? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">O valor varia conforme a quantidade e condições do pedido. Fale conosco no WhatsApp para receber uma proposta personalizada para sua necessidade.</div></div></div>
-<div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Vocês oferecem suporte após a compra? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body-inner">Sim! Além do atendimento direto, disponibilizamos vídeos técnicos completos ensinando o manejo correto das mudas — do recebimento ao plantio e formação da cerca viva.</div></div></div>
-</div>
-</div>
-</section>
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div style="text-align:center;">
+        <h2 class="section-title">TUDO QUE VOCÊ PRECISA SABER</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Qual o pedido mínimo? <span
+              class="accordion-icon">+</span></button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">O pedido mínimo é de 100 unidades. Esse volume garante qualidade no
+              transporte e viabilidade logística para a sua entrega.</div>
+          </div>
+        </div>
+        <div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Qual o espaçamento ideal
+            para formar a cerca viva? <span class="accordion-icon">+</span></button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">Recomendamos 0,20 m entre cada muda, o que corresponde a 5 mudas por metro
+              linear. Esse espaçamento é ideal para que as plantas se fechem rapidamente e formem uma cerca densa e
+              impenetrável.</div>
+          </div>
+        </div>
+        <div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Como é calculado o frete?
+            <span class="accordion-icon">+</span></button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">O frete é calculado de acordo com a quantidade de mudas, o tamanho do
+              pedido e a cidade de entrega. Entre em contato para receber um orçamento personalizado.</div>
+          </div>
+        </div>
+        <div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Qual o valor por muda?
+            <span class="accordion-icon">+</span></button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">O valor varia conforme a quantidade e condições do pedido. Fale conosco no
+              WhatsApp para receber uma proposta personalizada para sua necessidade.</div>
+          </div>
+        </div>
+        <div class="accordion-item"><button class="accordion-header" aria-expanded="false">❓ Vocês oferecem suporte após
+            a compra? <span class="accordion-icon">+</span></button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">Sim! Além do atendimento direto, disponibilizamos vídeos técnicos
+              completos ensinando o manejo correto das mudas — do recebimento ao plantio e formação da cerca viva.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- CTA FINAL -->
-<section class="cta-final" id="cta">
-<div class="container">
-<img src="images/logo.png" alt="Limãozinho Bravo" class="cta-logo anim-scale" loading="lazy">
-<h2 class="anim-hidden">PRONTO PARA CERCAR SUA<br>PROPRIEDADE DE VERDADE?</h2>
-<p class="anim-hidden">Produtores de todo o Brasil já escolheram a qualidade do Limãozinho Bravo para formar suas cercas vivas. Agora é a sua vez. Fale com a gente agora mesmo.</p>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="cta-mega-btn glow" aria-label="Falar no WhatsApp">📲 FALAR COM A LIMÃOZINHO BRAVO NO WHATSAPP</a>
-<div class="cta-below">⚡ Atendimento rápido · 🔒 Sem compromisso · ✅ Orçamento gratuito</div>
-<div class="trust-seals">
-<span class="trust-seal anim-hidden">🌿 Produto Real</span>
-<span class="trust-seal anim-hidden">📹 Suporte em Vídeo</span>
-<span class="trust-seal anim-hidden">🚚 Entrega Nacional</span>
-<span class="trust-seal anim-hidden">🤝 Atendimento Humano</span>
-</div>
-</div>
-</section>
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="cta">
+    <div class="container">
+      <img src="images/logo.png" alt="Limãozinho Bravo" class="cta-logo" loading="lazy">
+      <div class="cta-mascot-row">
+        <img src="images/mascote.png" alt="Mascote" loading="lazy">
+        <div class="cta-mascot-msg">E aí, bora cercar sua propriedade de verdade? Tô te esperando no WhatsApp! É só
+          clicar aí embaixo. 💪🌿</div>
+      </div>
+      <h2>PRONTO PARA CERCAR SUA<br>PROPRIEDADE DE VERDADE?</h2>
+      <p>Produtores de todo o Brasil já escolheram a qualidade do Limãozinho Bravo para formar suas cercas vivas. Agora
+        é a sua vez.</p>
+      <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+        target="_blank" class="cta-mega-btn" aria-label="Falar no WhatsApp">📲 FALAR COM A LIMÃOZINHO BRAVO NO
+        WHATSAPP</a>
+      <div class="cta-below">⚡ Atendimento rápido · 🔒 Sem compromisso · ✅ Orçamento gratuito</div>
+      <div class="trust-seals">
+        <span class="trust-seal">🌿 Produto Real</span>
+        <span class="trust-seal">📹 Suporte em Vídeo</span>
+        <span class="trust-seal">🚚 Entrega Nacional</span>
+        <span class="trust-seal">🤝 Atendimento Humano</span>
+      </div>
+    </div>
+  </section>
 
-<!-- FOOTER -->
-<footer class="footer" id="contato">
-<div class="container">
-<div class="footer-grid">
-<div class="footer-brand">
-<img src="images/logo.png" alt="Limãozinho Bravo" class="footer-logo" loading="lazy">
-<p>"Muda certa, cerca viva garantida."</p>
-<div class="footer-socials">
-<a href="https://youtube.com/@limaozinhobravo" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31.9 31.9 0 0024 12a31.9 31.9 0 00-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
-<a href="https://instagram.com/limaozinhobravo" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.9 3.9 0 01-1.4-.9 3.9 3.9 0 01-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4 .6a5.9 5.9 0 00-2.1 1.3A5.9 5.9 0 00.6 4C.3 4.8.1 5.7.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.3.2 2.2.5 3a5.9 5.9 0 001.3 2.1A5.9 5.9 0 004 23.4c.8.3 1.7.5 3 .5 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.2 3-.5a5.9 5.9 0 002.1-1.3 5.9 5.9 0 001.3-2.1c.3-.8.5-1.7.5-3 .1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.2-2.2-.5-3a5.9 5.9 0 00-1.3-2.1A5.9 5.9 0 0020 .6c-.8-.3-1.7-.5-3-.5C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.8a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8z"/></svg></a>
-<a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4l-2-1c-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.3.3-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.5s0-.3-.1-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 21.8a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4a9.8 9.8 0 01-1.5-5.3C2.2 6.5 6.6 2.2 12 2.2a9.8 9.8 0 017 2.9 9.7 9.7 0 012.9 6.9c0 5.5-4.5 9.8-9.9 9.8zM20.5 3.5A11.8 11.8 0 0012 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.5 5.9L0 24l6.3-1.7c1.7.9 3.7 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.4-8.4z"/></svg></a>
-</div>
-</div>
-<div class="footer-nav">
-<h3>NAVEGAÇÃO</h3>
-<a href="#sobre">Sobre a marca</a>
-<a href="#beneficios">Benefícios</a>
-<a href="#como-funciona">Como funciona</a>
-<a href="#faq">Perguntas frequentes</a>
-<a href="#cta">Fale conosco</a>
-</div>
-<div class="footer-contact">
-<h3>CONTATO</h3>
-<p>📲 WhatsApp: (00) 00000-0000</p>
-<p>📹 YouTube: Limãozinho Bravo</p>
-<p>📍 Atendemos todo o Brasil</p>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="btn-yellow" style="margin-top:12px;">💬 Chamar no WhatsApp</a>
-</div>
-</div>
-<div class="footer-bottom">© 2025 Limãozinho Bravo. Todos os direitos reservados.</div>
-</div>
-</footer>
+  <!-- FOOTER -->
+  <div style="
+    background: linear-gradient(135deg, hsl(220, 15%, 18%), hsl(220, 20%, 14%));
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    color: hsl(0, 0%, 65%);
+    line-height: 1.8;
+  ">
+    <div
+      style="display:inline-flex; align-items:center; gap:0.4rem; margin-bottom:0.5rem; font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:hsl(0,0%,50%);">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
+      </svg>
+      Powered by
+    </div>
+    <div style="margin-bottom:0.75rem;">
+      <a href="https://fabrikadesites.com/" target="_blank" rel="noopener noreferrer"
+        style="color:hsl(0,0%,95%); font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.5px; transition: color 0.3s, text-shadow 0.3s;"
+        onmouseover="this.style.color='hsl(45,100%,70%)';this.style.textShadow='0 0 12px hsla(45,100%,60%,0.3)'"
+        onmouseout="this.style.color='hsl(0,0%,95%)';this.style.textShadow='none'">Fabrika de Sites</a>
+    </div>
+    <div style="display:flex; align-items:center; justify-content:center; gap:1.25rem; flex-wrap:wrap;">
+      <a href="https://wa.me/5564999312063" target="_blank" rel="noopener noreferrer"
+        style="color:hsl(0,0%,55%); text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem; font-size:0.8rem; transition: color 0.2s;"
+        onmouseover="this.style.color='hsl(142,70%,55%)'" onmouseout="this.style.color='hsl(0,0%,55%)'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        (64) 99931-2063
+      </a>
+      <span style="color:hsl(0,0%,30%);">•</span>
+      <a href="https://instagram.com/agenciaavatarmidia" target="_blank" rel="noopener noreferrer"
+        style="color:hsl(0,0%,55%); text-decoration:none; display:inline-flex; align-items:center; gap:0.35rem; font-size:0.8rem; transition: color 0.2s;"
+        onmouseover="this.style.color='hsl(330,70%,60%)'" onmouseout="this.style.color='hsl(0,0%,55%)'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+        </svg>
+        @agenciaavatarmidia
+      </a>
+    </div>
+  </div>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" class="whatsapp-float" aria-label="Falar com especialista no WhatsApp">
-<svg viewBox="0 0 24 24"><path d="M17.5 14.4l-2-1c-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.3.3-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.5s0-.3-.1-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 21.8a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4a9.8 9.8 0 01-1.5-5.3C2.2 6.5 6.6 2.2 12 2.2a9.8 9.8 0 017 2.9 9.7 9.7 0 012.9 6.9c0 5.5-4.5 9.8-9.9 9.8zM20.5 3.5A11.8 11.8 0 0012 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.5 5.9L0 24l6.3-1.7c1.7.9 3.7 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.4-8.4z"/></svg>
-<span class="whatsapp-tooltip">Falar com especialista</span>
-</a>
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+    target="_blank" class="whatsapp-float" aria-label="Falar com especialista no WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.5 14.4l-2-1c-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.3.3-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.4c.1-.1.2-.3.3-.5s0-.3-.1-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.3-.6-.4zM12 21.8a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.3-.4a9.8 9.8 0 01-1.5-5.3C2.2 6.5 6.6 2.2 12 2.2a9.8 9.8 0 017 2.9 9.7 9.7 0 012.9 6.9c0 5.5-4.5 9.8-9.9 9.8zM20.5 3.5A11.8 11.8 0 0012 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.5 5.9L0 24l6.3-1.7c1.7.9 3.7 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.4-8.4z" />
+    </svg>
+    <span class="whatsapp-tooltip">Falar com especialista</span>
+  </a>
 
-<!-- MOBILE CTA BAR -->
-<div class="mobile-cta-bar">
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F" target="_blank" aria-label="Falar no WhatsApp">📲 FALAR NO WHATSAPP</a>
-</div>
+  <!-- MOBILE CTA BAR -->
+  <div class="mobile-cta-bar">
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
+      target="_blank" aria-label="Falar no WhatsApp">📲 FALAR NO WHATSAPP</a>
+  </div>
 
-<script>
-// Navbar scroll
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 80);
-});
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
 
-// Hamburger menu
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-const mobileOverlay = document.getElementById('mobileOverlay');
-function toggleMenu() {
-  hamburger.classList.toggle('active');
-  mobileMenu.classList.toggle('open');
-  mobileOverlay.classList.toggle('show');
-}
-hamburger.addEventListener('click', toggleMenu);
-mobileOverlay.addEventListener('click', toggleMenu);
-document.querySelectorAll('.mobile-link').forEach(link => {
-  link.addEventListener('click', toggleMenu);
-});
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 80);
+    });
 
-// IntersectionObserver for animations
-const animEls = document.querySelectorAll('.anim-hidden, .anim-left, .anim-right, .anim-scale, .anim-rotate');
-const animObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const delay = entry.target.dataset.delay || 0;
-      setTimeout(() => entry.target.classList.add('anim-visible'), delay);
-      animObserver.unobserve(entry.target);
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    function toggleMenu() {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+      mobileOverlay.classList.toggle('show');
     }
-  });
-}, { threshold: 0.15 });
+    hamburger.addEventListener('click', toggleMenu);
+    mobileOverlay.addEventListener('click', toggleMenu);
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', toggleMenu);
+    });
 
-// Add staggered delays
-document.querySelectorAll('.benefit-card').forEach((card, i) => { card.dataset.delay = i * 100; });
-document.querySelectorAll('.testimonial-card').forEach((card, i) => { card.dataset.delay = i * 150; });
-document.querySelectorAll('.step-item').forEach((item, i) => { item.dataset.delay = i * 150; });
-document.querySelectorAll('.stat-item').forEach((item, i) => { item.dataset.delay = i * 120; });
-document.querySelectorAll('.trust-seal').forEach((item, i) => { item.dataset.delay = i * 100; });
-document.querySelectorAll('.gallery-item').forEach((item, i) => { item.dataset.delay = i * 150; });
+    // ========== GSAP HERO ANIMATIONS ==========
+    const heroTL = gsap.timeline({ defaults: { ease: 'power3.out' } });
+    heroTL
+      .from('.hero-logo-img', { scale: 0, rotation: -180, duration: 1, ease: 'back.out(1.7)' })
+      .from('#heroBadge', { y: 30, opacity: 0, duration: 0.6 }, '-=0.3')
+      .from('#heroTitle', { clipPath: 'inset(0 100% 0 0)', duration: 0.8 }, '-=0.3')
+      .to('#heroTitle', { clipPath: 'inset(0 0% 0 0)', duration: 0.8 }, '<')
+      .from('#heroSub', { y: 40, opacity: 0, duration: 0.6 }, '-=0.4')
+      .from('#heroCta', { scale: 0.5, opacity: 0, duration: 0.5, ease: 'back.out(1.7)' }, '-=0.3')
+      .from('#heroSecondary', { y: 20, opacity: 0, duration: 0.4 }, '-=0.2')
+      .from('#heroMascote', { x: 100, opacity: 0, duration: 0.8, ease: 'power2.out' }, '-=0.6')
+      .to('#mascotBubble', { opacity: 1, scale: 1, duration: 0.5, ease: 'back.out(1.7)' }, '-=0.2');
 
-animEls.forEach(el => animObserver.observe(el));
+    // Mascot float
+    gsap.to('#heroMascote', {
+      y: -16, duration: 1.5, repeat: -1, yoyo: true, ease: 'sine.inOut'
+    });
 
-// Counter animation
-function animateCounter(el, target, isDecimal) {
-  const duration = 1500;
-  const start = performance.now();
-  function update(now) {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const current = target * eased;
-    if (isDecimal) {
-      el.textContent = current.toFixed(2).replace('.', ',') + 'm';
-    } else {
-      el.textContent = Math.floor(current) + '+';
+    // CTA pulse
+    gsap.to('#heroCta', {
+      scale: 1.04, duration: 1, repeat: -1, yoyo: true, ease: 'sine.inOut'
+    });
+
+    // ========== GSAP SCROLL ANIMATIONS ==========
+
+    // Section titles - reveal from left
+    gsap.utils.toArray('.section-title').forEach(title => {
+      gsap.from(title, {
+        scrollTrigger: { trigger: title, start: 'top 85%', toggleActions: 'play none none none' },
+        x: -60, opacity: 0, duration: 0.8, ease: 'power3.out'
+      });
+    });
+
+    // Section tags
+    gsap.utils.toArray('.section-tag').forEach(tag => {
+      gsap.from(tag, {
+        scrollTrigger: { trigger: tag, start: 'top 85%' },
+        y: 20, opacity: 0, duration: 0.5
+      });
+    });
+
+    // Benefit cards - staggered
+    gsap.from('.benefit-card', {
+      scrollTrigger: { trigger: '.benefits-grid', start: 'top 80%' },
+      y: 60, opacity: 0, duration: 0.6, stagger: 0.12, ease: 'power2.out'
+    });
+
+    // Stat items
+    gsap.from('.stat-item', {
+      scrollTrigger: { trigger: '.stats-grid', start: 'top 80%' },
+      scale: 0.5, opacity: 0, duration: 0.6, stagger: 0.15, ease: 'back.out(1.4)'
+    });
+
+    // Step items
+    gsap.from('.step-item', {
+      scrollTrigger: { trigger: '.steps-timeline', start: 'top 80%' },
+      y: 50, opacity: 0, duration: 0.5, stagger: 0.2, ease: 'power2.out'
+    });
+
+    // Steps line fill
+    ScrollTrigger.create({
+      trigger: '.steps-timeline',
+      start: 'top 70%',
+      onEnter: () => { document.getElementById('stepsLineFill').style.width = '100%'; }
+    });
+
+    // Testimonials
+    gsap.from('.testimonial-card', {
+      scrollTrigger: { trigger: '.testimonials-grid', start: 'top 80%' },
+      x: -40, opacity: 0, rotation: -5, duration: 0.6, stagger: 0.15, ease: 'power2.out'
+    });
+
+    // Video cards
+    gsap.from('.video-card', {
+      scrollTrigger: { trigger: '.video-cards', start: 'top 80%' },
+      x: 60, opacity: 0, duration: 0.7, stagger: 0.2, ease: 'power2.out'
+    });
+
+    // About section
+    gsap.from('.about-text p', {
+      scrollTrigger: { trigger: '.about-text', start: 'top 80%' },
+      y: 30, opacity: 0, duration: 0.5, stagger: 0.15
+    });
+
+    gsap.from('.about-icons', {
+      scrollTrigger: { trigger: '.about-icons', start: 'top 85%' },
+      y: 30, opacity: 0, duration: 0.6
+    });
+
+    // Mascot communicator
+    gsap.from('#mascotSpeech', {
+      scrollTrigger: { trigger: '#mascotComm', start: 'top 75%' },
+      scale: 0, opacity: 0, duration: 0.6, ease: 'back.out(1.7)'
+    });
+
+    gsap.from('#mascotComm img', {
+      scrollTrigger: { trigger: '#mascotComm', start: 'top 75%' },
+      y: 40, opacity: 0, duration: 0.6, delay: 0.3
+    });
+
+    // About quote
+    gsap.from('.about-quote', {
+      scrollTrigger: { trigger: '.about-quote', start: 'top 85%' },
+      x: 50, opacity: 0, duration: 0.7
+    });
+
+    // FAQ items
+    gsap.from('.accordion-item', {
+      scrollTrigger: { trigger: '.accordion', start: 'top 80%' },
+      y: 30, opacity: 0, duration: 0.4, stagger: 0.1
+    });
+
+    // CTA final
+    gsap.from('.cta-logo', {
+      scrollTrigger: { trigger: '.cta-final', start: 'top 70%' },
+      scale: 0, rotation: -90, duration: 0.8, ease: 'back.out(1.7)'
+    });
+
+    gsap.from('.cta-mascot-row', {
+      scrollTrigger: { trigger: '.cta-mascot-row', start: 'top 85%' },
+      y: 40, opacity: 0, duration: 0.6
+    });
+
+    gsap.from('.cta-final h2', {
+      scrollTrigger: { trigger: '.cta-final h2', start: 'top 85%' },
+      y: 40, opacity: 0, duration: 0.6
+    });
+
+    gsap.from('.trust-seal', {
+      scrollTrigger: { trigger: '.trust-seals', start: 'top 90%' },
+      scale: 0, opacity: 0, duration: 0.4, stagger: 0.1, ease: 'back.out(1.7)'
+    });
+
+    // YT mascot
+    gsap.from('.yt-mascot-wrap', {
+      scrollTrigger: { trigger: '.yt-mascot-wrap', start: 'top 85%' },
+      x: -40, opacity: 0, duration: 0.7
+    });
+
+    // Gallery items parallax on scroll
+    gsap.from('.gallery-item', {
+      scrollTrigger: { trigger: '.gallery-track', start: 'top 85%' },
+      scale: 0.8, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'power2.out'
+    });
+
+    // ========== COUNTER ANIMATION ==========
+    function animateCounter(el, target, isDecimal) {
+      const duration = 1500;
+      const start = performance.now();
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = target * eased;
+        if (isDecimal) {
+          el.textContent = current.toFixed(2).replace('.', ',') + 'm';
+        } else {
+          el.textContent = Math.floor(current) + '+';
+        }
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
     }
-    if (progress < 1) requestAnimationFrame(update);
-  }
-  requestAnimationFrame(update);
-}
 
-const statNumbers = document.querySelectorAll('.stat-number[data-target]');
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-      const target = parseFloat(el.dataset.target);
-      const isDecimal = el.dataset.decimal === 'true';
-      animateCounter(el, target, isDecimal);
-      statsObserver.unobserve(el);
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+    statNumbers.forEach(el => {
+      ScrollTrigger.create({
+        trigger: el,
+        start: 'top 80%',
+        once: true,
+        onEnter: () => {
+          const target = parseFloat(el.dataset.target);
+          const isDecimal = el.dataset.decimal === 'true';
+          animateCounter(el, target, isDecimal);
+        }
+      });
+    });
+
+    // ========== ACCORDION ==========
+    document.querySelectorAll('.accordion-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const body = item.querySelector('.accordion-body');
+        const isOpen = item.classList.contains('active');
+        document.querySelectorAll('.accordion-item').forEach(it => {
+          it.classList.remove('active');
+          it.querySelector('.accordion-body').style.maxHeight = null;
+          it.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          body.style.maxHeight = body.scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // ========== GALLERY NAVIGATION ==========
+    const galleryTrack = document.getElementById('galleryTrack');
+    const galleryPrev = document.getElementById('galleryPrev');
+    const galleryNext = document.getElementById('galleryNext');
+    const galleryItems = galleryTrack.querySelectorAll('.gallery-item');
+    const dotsWrap = document.getElementById('galleryDots');
+    const itemW = 324; // approx item width + gap
+
+    // Create dots
+    const totalDots = Math.ceil(galleryItems.length / 2);
+    for (let i = 0; i < totalDots; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => { galleryTrack.scrollTo({ left: i * itemW * 2, behavior: 'smooth' }); });
+      dotsWrap.appendChild(dot);
     }
-  });
-}, { threshold: 0.5 });
-statNumbers.forEach(el => statsObserver.observe(el));
 
-// Steps line animation
-const stepsLine = document.getElementById('stepsLineFill');
-if (stepsLine) {
-  const stepsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        stepsLine.style.width = '100%';
-        stepsObserver.unobserve(entry.target);
+    galleryPrev.addEventListener('click', () => { galleryTrack.scrollBy({ left: -itemW * 2, behavior: 'smooth' }); });
+    galleryNext.addEventListener('click', () => { galleryTrack.scrollBy({ left: itemW * 2, behavior: 'smooth' }); });
+
+    galleryTrack.addEventListener('scroll', () => {
+      const idx = Math.round(galleryTrack.scrollLeft / (itemW * 2));
+      dotsWrap.querySelectorAll('.gallery-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+    });
+
+    // Tilt effect
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('mousemove', (e) => {
+        const rect = item.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        item.style.transform = 'perspective(800px) rotateY(' + (x * 10) + 'deg) rotateX(' + (-y * 10) + 'deg) scale(1.04)';
+      });
+      item.addEventListener('mouseleave', () => {
+        item.style.transform = '';
+      });
+    });
+
+    // ========== PARALLAX SECTIONS on scroll ==========
+    gsap.utils.toArray('.stats, .youtube, .cta-final').forEach(section => {
+      gsap.to(section, {
+        backgroundPosition: '50% 30%',
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    });
+
+    // Smooth scale-down on hero as user scrolls away
+    gsap.to('.hero-grid', {
+      scale: 0.92, opacity: 0.6,
+      scrollTrigger: {
+        trigger: '.hero',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true
       }
     });
-  }, { threshold: 0.3 });
-  stepsObserver.observe(stepsLine.parentElement);
-}
-
-// Accordion
-document.querySelectorAll('.accordion-header').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const item = btn.parentElement;
-    const body = item.querySelector('.accordion-body');
-    const isOpen = item.classList.contains('active');
-    document.querySelectorAll('.accordion-item').forEach(it => {
-      it.classList.remove('active');
-      it.querySelector('.accordion-body').style.maxHeight = null;
-      it.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
-    });
-    if (!isOpen) {
-      item.classList.add('active');
-      body.style.maxHeight = body.scrollHeight + 'px';
-      btn.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
-
-// Parallax on scroll for hero mascote
-let ticking = false;
-window.addEventListener('scroll', () => {
-  if (!ticking) {
-    requestAnimationFrame(() => {
-      const scrollY = window.scrollY;
-      const mascote = document.querySelector('.hero-mascote');
-      if (mascote && scrollY < window.innerHeight) {
-        mascote.style.transform = 'translateY(' + (scrollY * -0.15) + 'px)';
-      }
-      ticking = false;
-    });
-    ticking = true;
-  }
-});
-
-// Tilt effect on gallery images
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('mousemove', (e) => {
-    const rect = item.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    item.style.transform = 'perspective(800px) rotateY(' + (x * 8) + 'deg) rotateX(' + (-y * 8) + 'deg) scale(1.03)';
-  });
-  item.addEventListener('mouseleave', () => {
-    item.style.transform = '';
-  });
-});
-</script>
+  </script>
 </body>
+
 </html>
