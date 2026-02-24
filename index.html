@@ -367,6 +367,146 @@
       box-shadow: 0 8px 30px rgba(249, 196, 0, .4);
     }
 
+    .btn-download-wrap {
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: linear-gradient(135deg, #F9C400 0%, #FF9800 50%, #F9C400 100%);
+      background-size: 200% 200%;
+      color: #1A1A1A;
+      padding: 16px 36px;
+      font-size: 15px;
+      font-weight: 800;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all .35s ease;
+      box-shadow: 0 6px 28px rgba(249, 196, 0, .45), 0 2px 8px rgba(0, 0, 0, .18);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .btn-download::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+      transition: left .55s ease;
+    }
+
+    .btn-download:hover::before {
+      left: 100%;
+    }
+
+    .btn-download:hover {
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 12px 40px rgba(249, 196, 0, .6), 0 4px 16px rgba(0, 0, 0, .2);
+      background-position: right center;
+    }
+
+    .btn-download:active {
+      transform: translateY(-1px) scale(1.01);
+    }
+
+    .btn-download .dl-icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: rgba(0, 0, 0, 0.12);
+      border-radius: 50%;
+      font-size: 18px;
+      flex-shrink: 0;
+      transition: transform .3s ease;
+    }
+
+    .btn-download:hover .dl-icon-wrap {
+      transform: translateY(3px);
+    }
+
+    .btn-download .dl-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .btn-download .dl-text span:first-child {
+      font-size: 11px;
+      font-weight: 600;
+      opacity: 0.7;
+      letter-spacing: 1.5px;
+    }
+
+    .btn-download .dl-text span:last-child {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    /* Versão secundária do btn-download (onde era btn-outline) */
+    .btn-download-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #F9C400 0%, #FF9800 50%, #F9C400 100%);
+      background-size: 200% 200%;
+      color: #1A1A1A;
+      padding: 14px 32px;
+      font-size: 14px;
+      font-weight: 800;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: all .35s ease;
+      box-shadow: 0 6px 24px rgba(249, 196, 0, .4), 0 2px 8px rgba(0, 0, 0, .12);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .btn-download-outline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+      transition: left .55s ease;
+    }
+
+    .btn-download-outline:hover::before {
+      left: 100%;
+    }
+
+    .btn-download-outline:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 10px 32px rgba(249, 196, 0, .55);
+    }
+
+    .btn-download-outline .dl-icon-sm {
+      font-size: 20px;
+      transition: transform .3s ease;
+    }
+
+    .btn-download-outline:hover .dl-icon-sm {
+      transform: translateY(3px);
+    }
+
     .hero-secondary {
       display: block;
       margin-top: 18px;
@@ -390,7 +530,7 @@
     }
 
     .hero-mascote {
-      max-width: 360px;
+      max-width: 800px;
       width: 100%;
       filter: drop-shadow(0 20px 40px rgba(0, 0, 0, .4));
     }
@@ -798,6 +938,14 @@
       border-radius: 8px;
       box-shadow: 0 4px 20px rgba(26, 107, 0, .12);
       transition: all .3s;
+    }
+
+    .benefit-card,
+    .testimonial-card,
+    .youtube-grid,
+    .video-card {
+      opacity: 1 !important;
+      transform: none !important;
     }
 
     .benefit-card:hover {
@@ -1945,7 +2093,17 @@
         <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
           target="_blank" class="hero-cta" id="heroCta" aria-label="Quero comprar minhas mudas no WhatsApp">📲 QUERO
           COMPRAR MINHAS MUDAS</a>
+        <div class="btn-download-wrap" id="heroDownloadWrap">
+          <a href="catalogo-limaozinho.pdf" download class="btn-download" aria-label="Baixar Catálogo Completo">
+            <span class="dl-icon-wrap">⬇</span>
+            <span class="dl-text">
+              <span>GRATUITO</span>
+              <span>Baixar Catálogo Completo</span>
+            </span>
+          </a>
+        </div>
         <a href="#como-funciona" class="hero-secondary" id="heroSecondary">▶ Ver como funciona</a>
+
       </div>
       <div class="hero-visual">
         <div class="mascot-bubble" id="mascotBubble">💪 Eu garanto: sua cerca vai ficar BRABA!</div>
@@ -2248,9 +2406,8 @@
       <div class="testimonials-footer">
         <p>📸 Trabalhamos com fotos reais dos nossos produtos — porque acreditamos que transparência não é diferencial,
           é obrigação.</p>
-        <a href="https://wa.me/5500000000000?text=Ol%C3%A1%21+Vim+pelo+site+e+tenho+interesse+em+comprar+mudas+de+Lima%C3%A3ozinho+Bravo+para+cerca+viva.+Pode+me+passar+mais+informa%C3%A7%C3%B5es%3F"
-          target="_blank" class="btn-outline" aria-label="Ver mais exemplos no WhatsApp">📲 QUERO VER MAIS EXEMPLOS
-          →</a>
+        <a href="catalogo-limaozinho.pdf" download class="btn-download" aria-label="Baixar Catálogo Completo">QUERO VER
+          MAIS EXEMPLOS</a>
       </div>
     </div>
   </section>
