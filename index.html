@@ -74,7 +74,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1220px;
       margin: 0 auto;
       padding: 0 24px;
     }
@@ -190,8 +190,7 @@
     }
 
     .nav-cta:hover {
-      filter: brightness(.9);
-      transform: translateY(-2px);
+      color: var(--preto-suave) !important;
     }
 
     .hamburger {
@@ -1370,8 +1369,8 @@
     }
 
     .yt-mascot-wrap img {
-      width: 420px;
-      height: 260px;
+      width: 380px;
+      height: 240px;
       filter: drop-shadow(0 8px 16px rgba(0, 0, 0, .3));
       position: relative;
       z-index: 1;
@@ -1602,7 +1601,7 @@
       color: var(--branco);
       font-size: 13px;
       font-weight: 600;
-      transition: all .3s;
+      opacity: 1;
     }
 
     .trust-seal:hover {
@@ -1811,13 +1810,13 @@
       }
 
       .hero-grid {
-        grid-template-columns: 1fr;
+        display: flex;
         text-align: center;
+        flex-direction: column-reverse;
       }
 
       .hero-visual {
-        order: -1;
-        margin-bottom: 20px;
+        display: none;
       }
 
       .hero-mascote {
@@ -1874,6 +1873,10 @@
         display: none;
       }
 
+      .nav-cta {
+        display: block;
+      }
+
       .hamburger {
         display: flex;
       }
@@ -1893,7 +1896,7 @@
       }
 
       .hero-logo-img {
-        width: 160px;
+        width: 300px;
       }
 
       .section-title {
@@ -1932,6 +1935,7 @@
       .steps-timeline {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
       }
 
       .steps-line {
@@ -1988,7 +1992,7 @@
       }
 
       .yt-mascot-wrap {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
       }
