@@ -863,7 +863,7 @@
     }
 
     .mascot-comm img {
-      max-width: 260px;
+      max-width: 290px;
       filter: drop-shadow(0 12px 24px rgba(0, 0, 0, .2));
     }
 
@@ -1363,39 +1363,46 @@
     /* Mascot video section communicator */
     .yt-mascot-wrap {
       display: flex;
-      align-items: flex-end;
-      gap: 16px;
+      align-items: flex-start;
       margin-top: 32px;
+      gap: 0;
+      margin-left: -100px;
     }
 
     .yt-mascot-wrap img {
-      width: 100px;
+      width: 420px;
+      height: 260px;
       filter: drop-shadow(0 8px 16px rgba(0, 0, 0, .3));
+      position: relative;
+      z-index: 1;
     }
 
     .yt-mascot-bubble {
       background: rgba(255, 255, 255, .15);
       border: 1px solid rgba(255, 255, 255, .25);
       color: var(--branco);
-      padding: 14px 20px;
+      padding: 10px 14px;
       border-radius: 14px;
       border-bottom-left-radius: 4px;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.5;
       position: relative;
+      margin-bottom: 24px;
+      margin-left: -32px;
+      max-width: 220px;
     }
 
     .yt-mascot-bubble::after {
       content: '';
       position: absolute;
       bottom: 8px;
-      left: -10px;
-      border: 10px solid transparent;
+      left: 0px;
+      /* encosta certinho na borda */
+      border: 9px solid transparent;
       border-right-color: rgba(255, 255, 255, .15);
       border-left: 0;
     }
-
     /* FAQ */
     .faq {
       padding: 100px 0;
@@ -1509,7 +1516,8 @@
     }
 
     .cta-mascot-row img {
-      width: 120px;
+      width: 340px;
+      height: 240px;
       filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .3));
     }
 
@@ -2247,7 +2255,7 @@
               Olha, eu sou o <strong>Limãozinho Bravo</strong> e tô aqui pra te garantir: cada muda que sai daqui é
               <strong>selecionada com carinho e responsabilidade</strong>. Sem conversa mole! 🌿
             </div>
-            <img src="images/mascote.png" alt="Mascote Limãozinho Bravo comunicando" loading="lazy">
+            <img src="images/limao-cruzado.png" alt="Mascote Limãozinho Bravo comunicando" loading="lazy">
           </div>
           <div class="about-quote">
             "Cada muda entregue carrega o nosso compromisso com a sua propriedade."
@@ -2421,7 +2429,7 @@
         <p class="youtube-desc">Publicamos vídeos técnicos ensinando como manusear corretamente as mudas após o
           recebimento e como formar uma cerca viva perfeita com o Limãozinho Bravo.</p>
         <div class="yt-mascot-wrap">
-          <img src="images/mascote.png" alt="Mascote" loading="lazy">
+          <img src="images/limao-apontando.png" alt="Mascote" loading="lazy">
           <div class="yt-mascot-bubble">Assiste aí! Fiz esses vídeos pra você não ter erro nenhum no plantio. É só
             seguir o passo a passo! 🎬</div>
         </div>
@@ -2507,7 +2515,7 @@
     <div class="container">
       <img src="images/logo.png" alt="Limãozinho Bravo" class="cta-logo" loading="lazy">
       <div class="cta-mascot-row">
-        <img src="images/mascote.png" alt="Mascote" loading="lazy">
+        <img src="images/limao-apontando.png" alt="Mascote" loading="lazy">
         <div class="cta-mascot-msg">E aí, bora cercar sua propriedade de verdade? Tô te esperando no WhatsApp! É só
           clicar aí embaixo. 💪🌿</div>
       </div>
